@@ -1,0 +1,86 @@
+{
+  "fetchedAt": "2026-09-20T10:05:05.697Z",
+  "maxWidthPx": 1600,
+  "photos": [
+    {
+      "file": "places-01.jpg",
+      "widthPx": 1900,
+      "heightPx": 1371,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-02.jpg",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-03.jpg",
+      "widthPx": 4160,
+      "heightPx": 2531,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-04.jpg",
+      "widthPx": 750,
+      "heightPx": 919,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-05.jpg",
+      "widthPx": 1101,
+      "heightPx": 2556,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-06.jpg",
+      "widthPx": 594,
+      "heightPx": 1870,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-07.jpg",
+      "widthPx": 749,
+      "heightPx": 496,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-08.jpg",
+      "widthPx": 1021,
+      "heightPx": 1839,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    },
+    {
+      "file": "places-09.jpg",
+      "widthPx": 3456,
+      "heightPx": 3456,
+      "attributions": [
+        "Sebastián Bauzá"
+      ]
+    },
+    {
+      "file": "places-10.jpg",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "attributions": [
+        "CLÍNICA DENTAL CATIANA BAUÇÀ"
+      ]
+    }
+  ]
+}

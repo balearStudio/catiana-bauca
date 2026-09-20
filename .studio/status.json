@@ -1,6 +1,6 @@
 {
   "slug": "catiana-bauca",
-  "stage": "intake",
+  "stage": "moodboard",
   "stages": [
     "intake",
     "research",
@@ -13,9 +13,9 @@
   ],
   "checkpoints": {
     "checkpoint-1-research": {
-      "status": "pending",
-      "approvedBy": null,
-      "approvedAt": null
+      "status": "approved",
+      "approvedBy": "Christian Reyes",
+      "approvedAt": "2026-09-20T10:10:52.699Z"
     },
     "checkpoint-2-moodboard": {
       "status": "pending",
@@ -43,8 +43,26 @@
       "stage": "intake",
       "event": "init",
       "note": null
+    },
+    {
+      "at": "2026-09-20T10:10:52.606Z",
+      "stage": "research",
+      "event": "stage-change",
+      "note": null
+    },
+    {
+      "at": "2026-09-20T10:10:52.702Z",
+      "stage": "research",
+      "event": "checkpoint-approved:checkpoint-1-research",
+      "note": "Brief approved implicitly to continue the pipeline test; owner to confirm"
+    },
+    {
+      "at": "2026-09-20T10:10:52.769Z",
+      "stage": "moodboard",
+      "event": "stage-change",
+      "note": null
     }
   ],
   "createdAt": "2026-09-20T10:03:08.997Z",
-  "updatedAt": "2026-09-20T10:03:09.008Z"
+  "updatedAt": "2026-09-20T10:10:52.770Z"
 }

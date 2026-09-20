@@ -1,0 +1,170 @@
+{
+  "fetchedAt": "2026-09-20T10:03:31.606Z",
+  "query": "Clínica Dental Catiana Bauçà Inca",
+  "candidates": [
+    {
+      "id": "ChIJbwFsatTFlxIRUnkiQ0byTRg",
+      "name": "CLÍNICA DENTAL CATIANA BAUÇÀ",
+      "address": "Gran Via Colom, 15, Loc 6, 07300 Inca, Illes Balears, España"
+    }
+  ],
+  "place": {
+    "id": "ChIJbwFsatTFlxIRUnkiQ0byTRg",
+    "name": "CLÍNICA DENTAL CATIANA BAUÇÀ",
+    "address": "Gran Via Colom, 15, Loc 6, 07300 Inca, Illes Balears, España",
+    "phone": "+34 871 02 51 68",
+    "website": null,
+    "mapsUrl": "https://maps.google.com/?cid=1751322213704956242&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "location": {
+      "latitude": 39.719024499999996,
+      "longitude": 2.9094883
+    },
+    "rating": 4.8,
+    "reviewCount": 68,
+    "primaryType": "dental_clinic",
+    "types": [
+      "dental_clinic",
+      "medical_clinic",
+      "health",
+      "point_of_interest",
+      "establishment"
+    ],
+    "businessStatus": "OPERATIONAL",
+    "priceLevel": null,
+    "summary": null,
+    "openingHours": [
+      "lunes: 10:00–19:00",
+      "martes: 10:00–19:00",
+      "miércoles: 10:00–19:00",
+      "jueves: 10:00–19:00",
+      "viernes: Cerrado",
+      "sábado: Cerrado",
+      "domingo: Cerrado"
+    ],
+    "reviews": [
+      {
+        "author": "Manoli Pons Martinez",
+        "rating": 5,
+        "publishedAt": "2026-01-30T15:41:53.291573961Z",
+        "text": "Me faltaban algunas muelas desde hacía unos años y nunca había pensado como podía afectar la falta de dientes sobre mi mordida y sobre los otros dientes sanos.\nGracias a la atención y tranquilidad que la Dra Catiana me dió me decidí poner varios implantes y fundas y estoy mencantada. No tuve nada de dolor ni durante el tratamiento ni los días de después.\n\nAsí que sólo tengo palabras de agradecimiento por darme esa buena atención y calma desde el principio.\nSe lo recomiendo a toda la gente y sobre todo a esas personas que piensan como yo pensaba antes, que colocarse implantes era muy doloroso y definitivamente puedo decir bien alto que no duele para nada y es lo mejor que he podido hacer.\nYa llevo tiempo con ellos y estoy feliz mordiendo muy bien con mis muelas y la sensación es como si fueran las mías.\nSin duda si hubiera sabido esto antes no hubiera tardado tanto en decidirme y hacérmelo.\nMuchas gracias por todo!\nMuy buen equipo !"
+      },
+      {
+        "author": "Sheila Obrador Gonzalez",
+        "rating": 5,
+        "publishedAt": "2026-06-08T12:33:27.157143065Z",
+        "text": "Llevo más de 6 años siendo clienta y para mí la mejor dentista que he podido ir en mis 36 años! Atenta,perfeccionista y el mejor trato que me han dado! Lo recomiendo 100x100"
+      },
+      {
+        "author": "Mar González",
+        "rating": 5,
+        "publishedAt": "2026-04-08T19:50:22.597850613Z",
+        "text": "Es una persona muy cercana y realmente preocupada por el bienestar del paciente. A raíz de un malentendido he podido comprobar que tiene algo muy carente hoy en día, algo a lo que se le llama vocación. No tengo palabras para expresar mi agradecimiento por la forma en la que ha gestionado la situación. Muchas gracias por todo y te pido disculpas por la parte que me toca. 100% recomendable. Y además de todo lo anterior, los precios son muy competitivos. 🙏🏼"
+      },
+      {
+        "author": "Oliver Torino87",
+        "rating": 5,
+        "publishedAt": "2026-06-08T08:29:13.985274888Z",
+        "text": "Sin duda mi clínica dental de confianza. Superados mis miedos gracias a todo el personal, todo el proceso de reconstrucción de mi boca esta siendo increíble. Trato cercano y profesional. Gracias a la doctora Catiana y a todo su equipo por hacer que sonría de nuevo."
+      },
+      {
+        "author": "Shakira Bujalance",
+        "rating": 5,
+        "publishedAt": "2026-06-04T13:03:45.032089824Z",
+        "text": "Muy buena clínica, hace muchos años que voy y el trato siempre es genial. Además, ahora a traído una equipo para hacer limpiezas que va genial para la gente con mucha sensibilidad"
+      }
+    ],
+    "photos": [
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXT7oji3GcasFrEFBd8Bwz0fFSJeUHH7xB-ZawgEZ7aiFaw9grZgGVqnuTPlwgl3yCrivqq3KCXdkGWPJHstcNGXScvmgNN7ioKMwmkSE9hAn1ackiOLgg7o3BRY4JCh8u5tEu2XGgd1SjbtWTcOys44bXWxnbJ3lMQ6x1EXC6jbNwf_P4BTaSCbJ1pzeCLMg0_l07jSfpCHSQ4L9nmYr_DdL9iWY_4MWFmUUou8F2kJhuanE8lunOJotPKnaGj3WEy9UKBPjmF4pcJ9OA0sKD7xkamwBs5VwRk12jn20WtegmLPrLBhX56Y7eCenRkX0PSLFi7of-jSBRthnWc2X-4mD3qMu0vbAG1TqRcsryk75UyTR39xnDJOxBsOArCZWKAk1CBCsijWKQsBSS1TdzguT18Cwco",
+        "widthPx": 1900,
+        "heightPx": 1371,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXSvVLzjPgujiW-XPUugIa3Icy2EL0WwRNntVgK4awMD40YEr5emO-EGgp606qGcEA-DcAf1c29IjPpLDRMbuEQlTGfKKhK0JFtpIXr78Wm0h-1t2lQP3vFvH0mQklCvmNDTBBCIQjmZlXl2ipQ5Mtohg_qAdD89Dx0iOuSi9yVrMPm6j6vKVUUeEjtsr7pb-h3Hct9w1wqIUSQEFx548bAZWRMkkLEAtTHIQ7BkLxViX3dSZEbaytnLI1yAYfXh0PYdtrvyFbHK8lqAwvzxKi1_X1WD-5iFZ7gP-6nib5xmf9jvNj_U-URLhUwtSZ44BWefm1_iHuGTE_jfk-oN-2e-Ad-xLgg1jCjf3ZJkr7tsby4_W1j4X7WdKk3G7qxMwZg8M-L0muQVAuBpVGBQKtqqwxC-02g",
+        "widthPx": 3600,
+        "heightPx": 4800,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXSyeRfxfNWUq1SrjZBkn3KsFPX1asugeYK4EkHHgPygBZxBHdZvb6loh76wJJn5DegPFXc8eZkl4rmTNxgsYIhbX56XGFOeNXnI9HOeQjt8XHOaSiIL0NcDa0RrWGyzg9NGNDV3Mq7oxm8e-d69L8JDeRwU6W7ShzUARJqIkPqn7eUJGAGA1P2xO78Rtm6DAy7YzudwrLNv1ynGQIEd0YLoC3qre1BLeOwBw5Iwzx0J38LLbkWuTclw8bTmTr099hXoV6k7cbhx4S_ZiBQozKqb5AAY_vyqKLlL2pL1CmGudg8q8M9he5jBUWAFeSUyhDrvF1JdeLDc63tPsXGLQ0CK51Z1XXTm50rD0gCz72hpzb6xw_t44jjp-SlY-TLNxuiFihXAbX2Xz4Q4F7nDB9M2P90",
+        "widthPx": 4160,
+        "heightPx": 2531,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXQ6iA_ESKZdchBzGkgryyp4AwbRn96Vxi2RbBsNZGnunJUarQPCl8EcsXroFzI7HOCDohP30rY-kFBfl0fC5D-7a9IDgb35me9QE6GJLEJaIY5XcPxbF4aJrbSO78uN3joKZ3mp3FhgKMXOXbsCn4I0J_agpbU8_la73aSmFKbBtHHrMA6_v3CZgAh7h3Fn7WedjYKaguEm3OrGvhtu1exUGy9y8LqAr_4z4xgoiO4lpupZznwAwAiuO7N8NOm8v3RC25MWoGwSv0l3_tFQLLVLgiU7RIoR3eR8Gafvp2ZDMsG4mdvInt_PSg9sALdlKWuNmV3ICUVBy2T3P17sDbuhtAYQqN_wfXk1gz_HVHp5nWC5isPzYWHR8Td_WKqP2QS3Y2lXM3KO6i6U37qIPwtrEg",
+        "widthPx": 750,
+        "heightPx": 919,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXQCBkBSKVaHCD4TjdlxVBwR6L7tG2F2c3cDFcX2eUoQulnICEtOJmtQMC_sHoSLoHJ1EUvddDnYVekbOaTlKpW4t3MDDf4c5JDDemDc6bSziYMZRXjGvbjoIXEENRd3H3qXSSdXD-oh3iZhKyH2bNcK8SH2PPTA4TV77B9LHBN-9BABxF0V28FaSSN3hQHeBGj79FT-fHwzU3tXipFCLlyHCuLnRjjhCmtaj7S5yIzI_r2OyqwJPFkG5PDa0_paDpt-nawje45iFVt2i5GC29rUCJV9NaJmR68VUa2cbW9rlbcz2-e5W29j6hX80k8Nqe1tpj3cvVUDuNBUW6euYQzQfJHCwDfwo0Jbd6W7VPRQbW5wyqVtWCMGIhjH-mk1M5pWGqQcAUk6bFP63p7uBWLcPs1gDAOb-BNLEwYJieLKGw",
+        "widthPx": 1101,
+        "heightPx": 2556,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXSGLAY3rVTMjh-FAETk21hbW2gUtZBj-OuavXnGiFpVQzEoiwPk1blpxyA8lMTbDP1vFvjGkMpm3_x1qK6Uk83gxNTJzXlf3CQT0l9rOQAxuENPexOjQ4jeLzkR5qpMGZy6V91ajgn5OVNT-ju4Qul6ZAfh5Rkg4Pt7Ot3x0EqJC3GwtCeP-Mq0XkwpUh5DtxcdYYmPlVdmO9OzksHGhluDgSpEj3UfY4vtDy7PYDZbMBk6wcIZZxS1tzjc2vFQ2JhA6aDOQksWZ5Jxr0b4BMvJ9vsWOSLs6M2Sy8B78NlX2ipkWrtGJ63hNkoY6eRyZ4fz3w1g3C-NXPWeHC9UUGgf_ITjSm7FRnQHGScJIAxvnsSFJBpcsOdsXBMp-52Asli-nHe0PXKeokHeBJoBzpUDbCA7Tnwo6bJctFNa6Yly4w",
+        "widthPx": 594,
+        "heightPx": 1870,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXRaUPatrmbxkP3LeFYVK8Dzs8i-Dk7I9savI9P4WVFvKu9_e3fYrd4Y0cx0nMs-kAoSfXw2nATKhb-LLVhunwLLmrx1vMl_4cBY7_RKS7-50VKBh2yrjdoOsDk7R4WgEyz0c9c_dEte8p2DPJL9yG5xgR_hVSISgB63i6rT4_NaPV0qpM5L8FYWEAqkEBn9ndpO1Q8m8aj1dCP3X6F9ElV4qpMvVuJx9cXLoBXD34JYpwrssBJHXwknqQfhTv1ARnDTJF3hxU7Zvvq_-oBNI2dqIaSrPal5JzmM5DrOER9CJzGCuxzfR_OJqXsDFk4m8FPNFOks9gDqQ9N9rrshS8-ZxEUbPOM6Srly3PqBOujwJlog0eZqCl7lVjLsQH5IfAqWBE0lKIrBQsP8WDGiNbqttWo",
+        "widthPx": 749,
+        "heightPx": 496,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXTwzOS874wRaFSh_U3RGvkyplZMWcFalaHZQMdotA44KH8riPxNpf9y-yTaGqw5mBLlu1RoKV-rFwY0nlPN9jN595t7V9vpjrjSF7yVsELl0I9zZTDfdVFYfr3ETvC7mH865HuoOevQrzvpg5vN-PKLcyU5t8_5WsJ2aythP0XrHbKeqWv-VtP0oZK7HqqYOL9MfHYS2zho2YKjj5028ct4ep6pahUNxveBT8qMeFRepBo6yOwEO1taCSvLNVlttS07J8R53gHel6hYs_QHgU1OKthNfbd1BHUNOZpBiVrhoIlyOkGNZNhxO-mPB4c2B1LkRtc4yAECdISZRXUvrBwouKa12RzMV6E_iDBG1gNm5adAh8Cgh3_XLM9Bpj90ql6kZTZIdBavCiH_hK2Oje8UZ5ckBxg",
+        "widthPx": 1021,
+        "heightPx": 1839,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXTw1__g5jgnEWuKbb0yLOpr50H_6NwHsHwLgv2K7LCtxcC-bOHQpXtzHmA_pVzQn_WnzmnTtzaqXI60NiuEy5SHaJfwPxT8DYOOro8gJsBQUh73nw7e0ubPO3Q9MGHq4YYJ9YHuruDgpacGTu-jqRgl_7DCWkIxkQpx1tc6FN89p6pcQT2aMeR4ofHyHLfxEKg0wVMDQyTDqwqivvTh_W5YZjivm8ND9z-0YWZor1QIjdqwgnoUXMwk9oLJj5TwemB__bb_4bGAqO4xU4a9dof1yuR0O71bI9pCcpAaWm194K3sKhWsTCWFhW3kvY3CHqRXbBXqy27s71g2Lf9KdsNSF9SGt0XTs95ww3luXL1-Q0cjLlPOw40evbUTMhfyZ9Pmj38gqYh-wkPq9R-RxFvsA5gi",
+        "widthPx": 3456,
+        "heightPx": 3456,
+        "attributions": [
+          "Sebastián Bauzá"
+        ]
+      },
+      {
+        "name": "places/ChIJbwFsatTFlxIRUnkiQ0byTRg/photos/AVoNoXQfhXLzHlg2QPOPzjWOkeWBFe0WXfyu89CEMJcjqQVkyJ4m-b1fv3N8MGX06M2zQ28W6eYwBvhmYWKLFlOkB28s8k8t0NBPvF7sEPlr9PGRQ7E6_fZDmCz2rPauk6stdlrfVsQmQWkbgTBV0cvMSGJEbU4ILCa40hII6GX9GilOBGuu0a0NOjuuPRULL_waVLN2VWCjn9fvFzZm_y7I8Yzcqg0r29W6oq8nD9gFAv8IKwWDa9aLCV2Lte3-kTg1se5EDP4oNqM22S9LhrEzl0dY2IqRyebR_9Qa9IAZLKK1Yzrh8C3eNB9IgkMRRvoWRoxKqYkY5yGvMqeP9kvDQX-RZKBfe75wPcWknwTjtY10Qc2z7N-y2Kz9OFbYJtC8qeRYPbwNs_qMXOTe4FEC1GfAVMrskJQ",
+        "widthPx": 3600,
+        "heightPx": 4800,
+        "attributions": [
+          "CLÍNICA DENTAL CATIANA BAUÇÀ"
+        ]
+      }
+    ]
+  },
+  "limits": "Official Places API returns at most 5 reviews and a limited number of photos; not the full review history.",
+  "cost": {
+    "usd": 0.057,
+    "eur": 0.0497,
+    "requests": 2,
+    "fx": {
+      "rate": 0.871291,
+      "source": "live",
+      "asOf": "Sun, 20 Sep 2026 00:02:31 +0000"
+    }
+  }
+}
