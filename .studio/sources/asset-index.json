@@ -47,12 +47,13 @@
       "bytes": 125952,
       "resolution": "low",
       "quality": "usable",
-      "notes": "Reception desk staff portrait. Young woman in blue dress at clinic logo desk with flowers. Phone snapshot quality with somewhat forced professional pose. Limited resolution and uneven lighting. Flag as potential patient review photo due to casual nature.",
+      "notes": "CORRECTED: a posed but genuine clinic photo — Dra. Catiana standing at her own reception desk (CB logo on the desk front, sunflowers). Clinic-owned, not patient-submitted. Phone snapshot quality.",
       "suggestedUse": "team/about",
-      "shotType": "portrait/reception",
+      "shotType": "person/portrait (the dentist)",
       "identifiablePeople": true,
       "brandColors": "Blue outfit matches brand identity, clinic logo on desk",
-      "flagged": "phone snapshot, possibly patient-submitted"
+      "flagged": "phone snapshot, possibly patient-submitted",
+      "patientSubmitted": false
     },
     {
       "file": "places-05.jpg",
@@ -100,7 +101,7 @@
       "bytes": 273408,
       "resolution": "low",
       "quality": "usable",
-      "notes": "Staff clinician in blue scrubs with protective mask posing next to GBT machine. Portrait-oriented phone snapshot. Professional clinical pose. Duplicate subject to places-05, shows same equipment. Mobile photography quality.",
+      "notes": "CORRECTED: not a duplicate of places-05. A clinician in blue scrubs and mask working, with a tooth-anatomy plate on the wall behind. Different subject, framing and room from places-05 (which is a full-length shot beside the GBT cleaning machine).",
       "suggestedUse": "team/services",
       "shotType": "portrait/equipment",
       "identifiablePeople": true,
@@ -113,11 +114,12 @@
       "bytes": 344064,
       "resolution": "ok",
       "quality": "good",
-      "notes": "Professional close-up of 3D dental diagnostic model/software display showing tooth and gum visualization (red/pink gums, white teeth model). Modern diagnostic equipment with gloved hands visible. Professional product photography with excellent lighting.",
-      "suggestedUse": "services/technology/treatment",
-      "shotType": "equipment/diagnostic",
-      "identifiablePeople": false,
-      "brandColors": "Blue diagnostic light glow, professional clinical white/gray aesthetic"
+      "notes": "CORRECTED by main session after viewing: this is NOT equipment or a 3D model. It is a close portrait of an older bearded man smiling up from the treatment chair, shot from above, wooden floor visible. Almost certainly a PATIENT-SUBMITTED review photo, not a clinic photo. Identifiable person; needs written consent and is not clinic-owned.",
+      "suggestedUse": "none — consent and provenance unresolved",
+      "shotType": "person/portrait (patient)",
+      "identifiablePeople": true,
+      "brandColors": "Blue diagnostic light glow, professional clinical white/gray aesthetic",
+      "patientSubmitted": true
     },
     {
       "file": "places-10.jpg",
@@ -158,7 +160,16 @@
       "tertiary": "White/light gray",
       "accent": "Lime green (secondary accent in signage)"
     },
-    "designRecommendations": "Clinic is well-represented by professional storefront and equipment shots. Enough quality imagery for hero sections and services gallery. Phone snapshots (places-04, 05, 08) lower overall professional presentation—consider supplementing with studio staff portraits. All images show modern facility with current technology (3D imaging, GBT machine)."
+    "designRecommendations": "Clinic is well-represented by professional storefront and equipment shots. Enough quality imagery for hero sections and services gallery. Phone snapshots (places-04, 05, 08) lower overall professional presentation—consider supplementing with studio staff portraits. All images show modern facility with current technology (3D imaging, GBT machine).",
+    "gaps": [
+      "Entire pack is 10 phone snapshots from the Google Business profile; no professional photography exists.",
+      "No team names, roles or headcount — at least three people appear across the photos.",
+      "Identifiable patients appear in places-02, places-09 and places-10: written consent required before publishing any of them.",
+      "places-09 is patient-submitted, not clinic-owned.",
+      "No logo file exists as artwork — the mark is only legible inside photos of the signage and reception desk.",
+      "No interior shot of a waiting room or a treatment room empty of people."
+    ],
+    "correctionNote": "Editorial fields for places-04, -08 and -09 were corrected by the main session after viewing every image. The original pass misfiled a patient portrait as equipment, called a genuine clinic photo patient-submitted, claimed 05/08 were duplicates, and reported no gaps."
   },
   "skipped": 0,
   "gaps": []
