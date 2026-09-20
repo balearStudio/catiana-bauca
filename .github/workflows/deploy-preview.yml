@@ -1,0 +1,60 @@
+name: Deploy preview
+
+# Triggered by the /ewf:preview skill (Task 1.5) after CHECKPOINT 3 approval,
+# or manually. Always builds with PREVIEW=true: noindex meta + a robots.txt
+# that disallows crawling. There is no separate "production" workflow yet —
+# see docs/build-path.md.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate CNAME from .studio/client.json
+        run: |
+          if [ -f .studio/client.json ]; then
+            slug=$(node -p "require('./.studio/client.json').slug")
+            domain="${slug}.dev.balearstudio.com"
+            echo "$domain" > public/CNAME
+            echo "CNAME=$domain" >> "$GITHUB_ENV"
+          else
+            echo "No .studio/client.json — skipping CNAME (expected in the template repo itself)."
+          fi
+
+      - name: Build (preview)
+        run: npm run build
+        env:
+          PREVIEW: "true"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

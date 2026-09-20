@@ -1,0 +1,38 @@
+/*
+ * Design tokens. Values here are structurally neutral placeholders only —
+ * this file has no house style. The `moodboard`/`design` skills overwrite
+ * these variables per client, driven by DESIGN.md. Never hard-code a color,
+ * font, spacing or motion value outside this file.
+ */
+:root {
+  /* Color: neutral grayscale only until DESIGN.md sets real values */
+  --color-bg: #ffffff;
+  --color-fg: #111111;
+  --color-muted: #666666;
+  --color-accent: #111111;
+  --color-border: #dddddd;
+
+  /* Type: system stack until DESIGN.md sets real typefaces */
+  --font-heading: system-ui, sans-serif;
+  --font-body: system-ui, sans-serif;
+  --font-scale-ratio: 1.25;
+  --font-size-base: 1rem;
+  --font-size-sm: calc(var(--font-size-base) / var(--font-scale-ratio));
+  --font-size-lg: calc(var(--font-size-base) * var(--font-scale-ratio));
+  --font-size-xl: calc(var(--font-size-lg) * var(--font-scale-ratio));
+  --font-size-2xl: calc(var(--font-size-xl) * var(--font-scale-ratio));
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  /* Motion: durations/easings, overridden per client's signature moment */
+  --motion-duration-fast: 0.2s;
+  --motion-duration-base: 0.5s;
+  --motion-duration-slow: 0.8s;
+  --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

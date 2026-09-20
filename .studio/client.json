@@ -1,0 +1,16 @@
+{
+  "slug": "catiana-bauca",
+  "companyName": "Clínica Dental Catiana Bauçà",
+  "existingWebsite": null,
+  "googleBusiness": { "link": "https://share.google/AzZmcwWzd68aMmc3y", "name": "Clínica Dental Catiana Bauçà", "city": "Inca" },
+  "social": { "instagram": null, "facebook": "https://www.facebook.com/catiana.bauca/", "other": [] },
+  "languages": ["ca", "es"],
+  "pageMode": "multi-page",
+  "pages": ["Inici", "La clínica", "Tractaments", "Equip", "Contacte"],
+  "assetPack": null,
+  "moodboard": null,
+  "notes": "No existing website found — only directory listings and a personal Facebook profile. Local clinic in Inca, Mallorca; patients are local, not tourists. Catalan is the primary language, Spanish second. No asset pack: research sources what imagery it can, and reports the shortfall rather than filling with stock. Test run for the revised design stage — repo deliberately kept LOCAL, not pushed to GitHub, since the clinic is not a client yet.",
+  "budgetEur": 3,
+  "socialScrapingEnabled": true,
+  "createdAt": "2026-09-20T00:00:00Z"
+}

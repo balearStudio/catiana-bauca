@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Client name — balearEWF template",
+    "description": "Placeholder content. The research/build stage replaces this with the client's real voice."
+  },
+  "hero": {
+    "eyebrow": "Template",
+    "heading": "This headline is a placeholder",
+    "subheading": "Replace this text during the content stage. It does not represent the client's final design or tone.",
+    "cta": "Get in touch"
+  }
+}

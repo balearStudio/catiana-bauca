@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+.DS_Store
+
+# Per-client state lives in the repo created FROM this template, never here.
+.studio/

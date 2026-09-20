@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "Inicio"
+  },
+  "languageSwitch": {
+    "label": "Cambiar idioma"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

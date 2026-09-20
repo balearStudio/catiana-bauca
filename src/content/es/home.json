@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Nombre del cliente — plantilla balearEWF",
+    "description": "Contenido de ejemplo. La fase de research/build sustituye este texto por la voz real del cliente."
+  },
+  "hero": {
+    "eyebrow": "Plantilla",
+    "heading": "Este titular es un marcador de posición",
+    "subheading": "Sustituye este texto durante la fase de contenido. No representa el diseño ni el tono final del cliente.",
+    "cta": "Contactar"
+  }
+}
