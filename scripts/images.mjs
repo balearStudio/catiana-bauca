@@ -45,7 +45,10 @@ const manifest = [
   // 0.175 cut the ceiling screen down to an unreadable sliver — and the beach
   // playing on it is the reason the brief calls this one of the three best
   // photographs. 0.05 keeps the screen and the lamp together.
-  { src: "whitening.jpg", out: "whitening", width: 900, crop: { aspect: 4 / 3, top: 0.05 } },
+  // Magnific 2x, conservative (creativity -3, resemblance 4): the brief called
+  // places-10 the weakest photograph on the page. Denoise and sharpen only —
+  // the geometry was compared against the original before accepting it.
+  { src: "whitening-enhanced.jpg", out: "whitening", width: 900, crop: { aspect: 4 / 3, top: 0.05 } },
   // Contact photo: half the container on desktop, full width on a phone, so
   // it is the one image where one file cannot serve both well.
   {

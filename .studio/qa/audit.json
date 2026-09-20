@@ -15,7 +15,7 @@
   ],
   "weight": {
     "/ca/": {
-      "transferKb": 590,
+      "transferKb": 591,
       "note": "text gzipped, images and fonts as-is. Fonts are counted in full; unicode-range subsetting means a real visitor downloads fewer, so this figure is a ceiling.",
       "breakdown": {
         "html": 4,
@@ -27,7 +27,7 @@
       }
     },
     "/es/": {
-      "transferKb": 590,
+      "transferKb": 591,
       "note": "text gzipped, images and fonts as-is. Fonts are counted in full; unicode-range subsetting means a real visitor downloads fewer, so this figure is a ceiling.",
       "breakdown": {
         "html": 4,
