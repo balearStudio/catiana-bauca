@@ -32,7 +32,11 @@ export const business = {
   closes: "19:00",
   days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
   image: "/images/storefront-day.webp",
-  sameAs: ["https://www.facebook.com/catiana.bauca/"],
+  // No `sameAs`. The only social account the research found is the dentist's
+  // **personal** Facebook profile (brief §6). Publishing a personal profile as
+  // the clinic's canonical social identity is a consent question that was
+  // never asked, so it stays out until the clinic says otherwise —
+  // `.studio/requests.md` item 11.
 } as const;
 
 export function businessJsonLd(siteOrigin: string, lang: string) {
@@ -70,7 +74,6 @@ export function businessJsonLd(siteOrigin: string, lang: string) {
       ratingValue: business.rating,
       reviewCount: business.reviewCount,
     },
-    sameAs: [...business.sameAs],
     availableLanguage: ["ca", "es"],
   };
 }

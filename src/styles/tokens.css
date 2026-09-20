@@ -58,7 +58,11 @@
   /* --- Layout -------------------------------------------------------- */
   --container: 1280px;
   --gutter: 28px;
-  --header-h: 63px;
+  /* Measured, not inherited. The handoff used 63px for its own header; giving
+     the nav, language and phone links 44px tap targets made ours 73px, and the
+     stale constant left the hero 10px past the fold at every breakpoint.
+     14px padding x2 + 44px content + 1px border. */
+  --header-h: 73px;
   --section-gap: 96px;
 
   --space-1: 0.25rem;

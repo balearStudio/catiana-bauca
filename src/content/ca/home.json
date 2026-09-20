@@ -30,7 +30,7 @@
   },
   "treatments": {
     "title": "Tractaments",
-    "intro": "Tot el que es fa a la clínica, sense derivar-te a tercers tret que calgui.",
+    "intro": "Tot el que es fa a la clínica.",
     "items": [
       {
         "name": "Conservadora",
@@ -72,18 +72,18 @@
     "items": [
       {
         "title": "Escàner intraoral 3D",
-        "desc": "Sense pasta ni motlles. En cinc minuts veus la teva boca a la pantalla i entens què t'estem explicant.",
+        "desc": "Sense pasta ni motlles. Veus la teva boca a la pantalla i entens què t'estem explicant.",
         "alt": "La doctora ensenya a un pacient el model 3D de la seva boca a la pantalla"
       },
       {
         "title": "Neteja GBT · Airflow",
         "desc": "Pols fina i aigua tèbia en lloc de raspar. Pensada per a qui té molta sensibilitat i defuig les neteges.",
-        "alt": "Màquina de neteja dental GBT a la clínica"
+        "alt": "La Dra. Catiana Bauçà amb la màquina de neteja GBT de la clínica"
       },
       {
         "title": "Blanquejament a clínica",
-        "desc": "Una sola sessió a la clínica, amb làmpada LED i control del to.",
-        "alt": "Sessió de blanquejament dental amb làmpada LED"
+        "desc": "Blanquejament a la clínica, amb làmpada LED i control del to.",
+        "alt": "Blanquejament dental amb làmpada LED, amb una platja a la pantalla del sostre"
       }
     ]
   },
@@ -91,7 +91,7 @@
     "title": "Què en diuen els pacients",
     "items": [
       {
-        "quote": "«Llevo más de 6 años siendo clienta y para mí la mejor dentista que he podido ir en mis 36 años! Atenta, perfeccionista y el mejor trato que me han dado!»",
+        "quote": "«Llevo más de 6 años siendo clienta y para mí la mejor dentista que he podido ir en mis 36 años! Atenta, perfeccionista y el mejor trato que me han dado! …»",
         "source": "Google · 5★"
       },
       {
@@ -99,7 +99,7 @@
         "source": "Google · 5★"
       },
       {
-        "quote": "«Hace muchos años que voy y el trato siempre es genial. Además, ahora a traído una equipo para hacer limpiezas que va genial para la gente con mucha sensibilidad.»",
+        "quote": "«… hace muchos años que voy y el trato siempre es genial. Además, ahora a traído una equipo para hacer limpiezas que va genial para la gente con mucha sensibilidad.»",
         "source": "Google · 5★"
       }
     ],
@@ -107,7 +107,7 @@
   },
   "contact": {
     "title": "Demana hora",
-    "lead": "Ho agafem nosaltres mateixos al telèfon, no hi ha centraleta. Si trobes comunicant és que som amb un pacient: torna-ho a provar d'aquí una estona i t'atendrem.",
+    "lead": "Demanar hora és una telefonada. Si trobes comunicant, és que som amb un pacient: torna-ho a provar d'aquí una estona.",
     "ctaPrimary": "Truca · 871 02 51 68",
     "ctaSecondary": "Com arribar-hi",
     "addressLabel": "Adreça",

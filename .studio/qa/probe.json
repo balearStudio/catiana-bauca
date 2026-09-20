@@ -1,0 +1,243 @@
+{
+  "url": "http://localhost:4321/ca/",
+  "reducedMotion": false,
+  "results": {
+    "mobile": {
+      "overflow": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [],
+      "targets": [],
+      "invisible": [],
+      "fonts": {
+        "h1": {
+          "family": "Archivo Variable",
+          "size": 34,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo Variable",
+          "size": 30,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo Variable",
+          "size": 19,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo Variable",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": [
+        {
+          "node": "div.treatments__row",
+          "text": "01ConservadoraCàries, empastaments i rec"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "02EndodònciaTractament de conductes quan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "03PeriodònciaGenives que sagnen, retracc"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "04OdontopediatriaPrimeres visites, revis"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "05OrtodònciaCorrecció de la mossegada en"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "06EstèticaBlanquejament i restauracions "
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "07Cirurgia i implantsExtraccions, implan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "08Pròtesi i ATMPròtesis fixes i removibl"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Llevo más de 6 años siendo clienta y pa"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Es una persona muy cercana y realmente "
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Hace muchos años que voy y el trato sie"
+        }
+      ]
+    },
+    "tablet": {
+      "overflow": {
+        "scrollWidth": 834,
+        "clientWidth": 834,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [],
+      "targets": [],
+      "invisible": [],
+      "fonts": {
+        "h1": {
+          "family": "Archivo Variable",
+          "size": 46.7,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo Variable",
+          "size": 30,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo Variable",
+          "size": 19,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo Variable",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": [
+        {
+          "node": "div.treatments__row",
+          "text": "01ConservadoraCàries, empastaments i rec"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "02EndodònciaTractament de conductes quan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "03PeriodònciaGenives que sagnen, retracc"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "04OdontopediatriaPrimeres visites, revis"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "05OrtodònciaCorrecció de la mossegada en"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "06EstèticaBlanquejament i restauracions "
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "07Cirurgia i implantsExtraccions, implan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "08Pròtesi i ATMPròtesis fixes i removibl"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Llevo más de 6 años siendo clienta y pa"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Es una persona muy cercana y realmente "
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Hace muchos años que voy y el trato sie"
+        }
+      ]
+    },
+    "desktop": {
+      "overflow": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [],
+      "targets": [],
+      "invisible": [],
+      "fonts": {
+        "h1": {
+          "family": "Archivo Variable",
+          "size": 80,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo Variable",
+          "size": 50,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo Variable",
+          "size": 26,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo Variable",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": [
+        {
+          "node": "div.treatments__row",
+          "text": "01ConservadoraCàries, empastaments i rec"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "02EndodònciaTractament de conductes quan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "03PeriodònciaGenives que sagnen, retracc"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "04OdontopediatriaPrimeres visites, revis"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "05OrtodònciaCorrecció de la mossegada en"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "06EstèticaBlanquejament i restauracions "
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "07Cirurgia i implantsExtraccions, implan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "08Pròtesi i ATMPròtesis fixes i removibl"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Llevo más de 6 años siendo clienta y pa"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Es una persona muy cercana y realmente "
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Hace muchos años que voy y el trato sie"
+        }
+      ]
+    }
+  }
+}

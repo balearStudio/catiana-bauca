@@ -22,9 +22,14 @@ export function Layout({ children }: { children: ReactNode }) {
     <div className="layout">
       <header className="header">
         <div className="header__inner container">
-          <a className="header__brand" href="#inici">
+          {/* The name is hidden below 420px, which would leave this link with
+              no accessible name at all — the logo is decorative. The label
+              carries it at every width. */}
+          <a className="header__brand" href="#inici" aria-label={t("brand")}>
             <img className="header__logo" src="/images/logo-cb.webp" alt="" />
-            <span className="header__name">{t("brand")}</span>
+            <span className="header__name" aria-hidden="true">
+              {t("brand")}
+            </span>
           </a>
 
           <nav className="header__nav" aria-label={t("nav.label")}>

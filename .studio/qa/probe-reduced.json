@@ -9,27 +9,35 @@
         "culprits": []
       },
       "contrast": [],
-      "images": [],
+      "images": [
+        {
+          "src": "/images/catiana-hero.webp",
+          "node": "img.hero__portrait",
+          "issues": [
+            "served at 704px into a 225px box (1.6x what a 2x screen needs; no srcset)"
+          ]
+        }
+      ],
       "targets": [],
       "invisible": [],
       "fonts": {
         "h1": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 34,
           "weight": "600"
         },
         "h2": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 30,
           "weight": "600"
         },
         "h3": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 19,
           "weight": "500"
         },
         "body": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 17,
           "weight": "400"
         }
@@ -48,22 +56,22 @@
       "invisible": [],
       "fonts": {
         "h1": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 80,
           "weight": "600"
         },
         "h2": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 50,
           "weight": "600"
         },
         "h3": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 26,
           "weight": "500"
         },
         "body": {
-          "family": "Archivo",
+          "family": "Archivo Variable",
           "size": 17,
           "weight": "400"
         }

@@ -41,10 +41,12 @@ Contrast: Ink on Paper **17.2:1**; body 8.6:1; subtle labels 4.6:1; CTA Nit-on-C
 ## Typography
 | Role | Typeface | Source | Weights |
 |---|---|---|---|
-| Everything | Archivo | Google Fonts | 400, 500, 600, 700 |
-| Quotes only | Instrument Serif | Google Fonts | 400, 400 italic |
+| Everything | Archivo | **Self-hosted** (`@fontsource-variable/archivo`, wght axis) | 400–700 variable |
+| Quotes only | Instrument Serif | **Self-hosted** (`@fontsource/instrument-serif`) | 400 |
 
-Scale is fluid, driven off the viewport in the hero (`clamp(34px, min(5.6vw, 9.4svh), 80px)`) so the hero always fits one screen without scrolling; section heads `clamp(30px, 3.6vw, 50px)`; body 17px; small print 11.5–15.5px.
+Fonts are **not** loaded from Google's CDN: the stylesheet link blocked first paint and sent every visitor's IP to Google, which an EU health-sector site does not need.
+
+Scale is fluid, driven off the viewport in the hero (`clamp(34px, min(5.6vw, 9.4svh), 80px)`) so the hero fits one screen on desktop (see Layout for what happens below 1100px); section heads `clamp(30px, 3.6vw, 50px)`; body 17px; small print 11.5–15.5px.
 Relationship: **one grotesque does all the work**; the serif appears only where a patient speaks, so a quote is visually a different kind of thing from the clinic's own voice. That is the whole type idea, and it is the only place the two faces meet.
 Treatment by level: display and section heads at 600, tracking −0.03em, sentence case. Treatment names at 500. Labels 11.5–12px, uppercase, tracking 0.12–0.16em — **uppercase is confined to these labels** and appears nowhere else.
 Where type is quiet: the treatments index — 8 rows of one heading and one line, no ornament at all.
@@ -52,7 +54,7 @@ Set as a design element: the name band, `CATIANA BAUÇÀ` sized to the exact pag
 
 ## Layout and spacing
 - Container 1280px, 28px gutters. Every section is `auto-fit, minmax(…, 1fr)` — the page reflows to one column with no breakpoint logic.
-- The hero is `min-height: calc(100svh - 63px)` and sized in `svh`, so it fits a phone screen including the browser chrome.
+- The hero fills one screen **on desktop**: `min-height: calc(100svh - var(--header-h))`, with `--header-h` at the measured 73px. Below 1100px it sizes to its content instead — the stacked composition plus a three-row fact bar cannot fit a phone screen, and forcing it only produced dead space. On a phone the portrait clears the fold and the fact bar begins just under it.
 - Radius: 999px on buttons, 14–20px on panels and images. Shadow appears exactly once, under the rating card.
 - Vertical rhythm: 96–110px between sections on desktop.
 
@@ -169,4 +171,14 @@ Checked line by line against `.studio/brief.md`. What the design asserted and th
 6. **Email `[pendent]`** — row removed rather than shipping a placeholder.
 7. **Hours "Dilluns a dijous, 10:00–19:00"** — Google says this, directories say a split shift. Shipped as Google's, still unconfirmed.
 8. **"porta anys atenent famílies d'Inca"** — kept. Reviews carry "llevo más de 6 años siendo clienta" and "hace muchos años que voy", so "anys" is evidenced; no specific number is claimed.
-9. **Legal notice and privacy policy** — the design's footer linked both to `#inici`. Spanish law requires them on a business site and neither exists. **Blocking before launch**, not before preview.
+9. **Legal notice and privacy policy** — the design's footer linked both to `#inici`. Spanish law requires them on a business site and neither exists, so the links were removed rather than shipped dead. **Blocking before launch**, not before preview.
+
+### Found at QA, after the build
+The `visual-qa` pass found four more claims the build had missed — all of them from the
+returned design except the first, which was written during the build itself. Full report and
+resolution log in `.studio/qa/visual-qa/report.md`.
+10. **"Ho agafem nosaltres mateixos al telèfon, no hi ha centraleta"** — asserted who answers and that there is no switchboard, against brief §8's "team unknown"; the Spanish version additionally said they are all women, contradicting the Catalan. Cut in both languages.
+11. **"sense derivar-te a tercers"** — an operational claim with no source. Cut.
+12. **"En cinc minuts veus la teva boca"** — an invented duration. Cut.
+13. **"Una sola sessió"** — the same claim `[CONFIRM]` 5 cut in negative form, surviving in positive form. Cut.
+14. **`sameAs` in the structured data** pointed at the dentist's personal Facebook profile, which brief §6 names as personal. Removed; a consent question, not a markup one.

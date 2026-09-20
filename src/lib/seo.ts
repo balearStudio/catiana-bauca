@@ -77,7 +77,12 @@ export function renderTagsToHtml(tags: SeoTag[]): string {
       const attrs = Object.entries(tag.attrs ?? {})
         .map(([key, value]) => `${key}="${escapeHtml(value)}"`)
         .join(" ");
-      return `<${tag.tag} ${attrs}>`;
+      // The SSR tags carry the same marker the client uses to find and replace
+      // them. Without it `Seo.tsx` cleared nothing on first paint and appended
+      // a second copy of every tag, so a rendering crawler saw each canonical
+      // and hreflang twice. Served HTML was always correct, which is why this
+      // did not show up in the audit.
+      return `<${tag.tag} ${attrs} data-seo-managed="true">`;
     })
     .join("\n    ");
 }

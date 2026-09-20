@@ -30,14 +30,22 @@ const outDir = resolve(root, "public/images");
 const manifest = [
   // Header/footer monogram, drawn at 34px and 30px.
   { src: "logo-cb.png", out: "logo-cb", width: 72, alpha: true },
-  // Hero cutout, already tight to her outline in the export.
-  { src: "catiana-hero.png", out: "catiana-hero", width: 704, alpha: true },
+  // Hero cutout, already tight to her outline in the export. The panel shrinks
+  // with the viewport, so a phone draws her at ~225px and the full file is
+  // 1.6x more than even a 2x screen needs.
+  { src: "catiana-hero.png", out: "catiana-hero", width: 704, alpha: true, widths: [480] },
   // Right column of "La clínica", 240px tall across roughly half the container.
   { src: "arcade.jpg", out: "arcade", width: 1200 },
   // The three cards in the dark section: ~400px wide at 1280, so 900 at 2x.
   { src: "scan-3d.png", out: "scan-3d", width: 900, crop: { aspect: 4 / 3, top: 0.223 } },
-  { src: "catiana-gbt.jpg", out: "catiana-gbt", width: 900, crop: { aspect: 4 / 3, top: 0.46 } },
-  { src: "whitening.jpg", out: "whitening", width: 900, crop: { aspect: 4 / 3, top: 0.175 } },
+  // 0.46 started below her chin: the tile showed a headless torso beside the
+  // machine, on a site whose whole idea is putting a person in front of you.
+  // 0.21 keeps her face and the top of the machine; the base falls out.
+  { src: "catiana-gbt.jpg", out: "catiana-gbt", width: 900, crop: { aspect: 4 / 3, top: 0.21 } },
+  // 0.175 cut the ceiling screen down to an unreadable sliver — and the beach
+  // playing on it is the reason the brief calls this one of the three best
+  // photographs. 0.05 keeps the screen and the lamp together.
+  { src: "whitening.jpg", out: "whitening", width: 900, crop: { aspect: 4 / 3, top: 0.05 } },
   // Contact photo: half the container on desktop, full width on a phone, so
   // it is the one image where one file cannot serve both well.
   {
@@ -109,6 +117,22 @@ async function main() {
           `${(size / 1024).toFixed(0)}KB`,
       );
     }
+  }
+
+  // Favicons. Without a <link rel="icon"> the browser requests /favicon.ico
+  // and logs a 404 on every page load, which Lighthouse counts as a
+  // best-practices failure.
+  const favSrc = resolve(srcDir, "logo-cb.png");
+  for (const [name, size] of [
+    ["favicon-32.png", 32],
+    ["favicon-180.png", 180],
+  ]) {
+    await sharp(favSrc)
+      .resize({ width: size, height: size, fit: "contain", background: "#fbfaf8" })
+      .flatten({ background: "#fbfaf8" })
+      .png()
+      .toFile(resolve(root, "public", name));
+    console.log(`${name}  ${size}x${size}`);
   }
 
   const unused = (await readdir(srcDir)).filter(

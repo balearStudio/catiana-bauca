@@ -51,12 +51,19 @@ export function Hero() {
         <div className="hero__figure">
           <div className="hero__stage">
             <div className="hero__panel" aria-hidden="true" />
+            {/* The largest contentful paint on every breakpoint. `fetchPriority`
+                moves it ahead of the font and script requests the preload
+                scanner would otherwise start first. Never `loading="lazy"`. */}
             <img
               className="hero__portrait"
               src="/images/catiana-hero.webp"
+              srcSet="/images/catiana-hero-480.webp 480w, /images/catiana-hero.webp 704w"
+              sizes="(max-width: 1099px) 240px, 320px"
               alt={t("hero.portraitAlt")}
               width={704}
               height={1181}
+              fetchPriority="high"
+              decoding="async"
             />
             <div className="hero__rating">
               <div className="hero__rating-score">
