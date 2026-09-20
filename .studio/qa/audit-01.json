@@ -1,0 +1,147 @@
+{
+  "dist": "/Users/christianreyes/Documents/Web/catiana-bauca/dist",
+  "languages": [
+    "ca",
+    "es"
+  ],
+  "pages": [
+    "/ca/",
+    "/es/"
+  ],
+  "externalLinks": [
+    "https://www.google.com/maps/dir/?api=1&amp;destination=Cl%C3%ADnica%20Dental%20Catiana%20Bau%C3%A7%C3%A0%2C%20Av.%20Gran%20Via%20de%20Colom%2015%2C%2007300%20Inca",
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com",
+    "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap",
+    "https://catiana-bauca.dev.balearstudio.com/ca/",
+    "https://catiana-bauca.dev.balearstudio.com/es/"
+  ],
+  "weight": {
+    "/ca/": {
+      "totalKb": 784,
+      "breakdown": {
+        "html": 12,
+        "js": 444,
+        "css": 12,
+        "webp": 316
+      }
+    },
+    "/es/": {
+      "totalKb": 785,
+      "breakdown": {
+        "html": 12,
+        "js": 444,
+        "css": 12,
+        "webp": 316
+      }
+    }
+  },
+  "summary": {
+    "fail": 4,
+    "warn": 13
+  },
+  "findings": [
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"common.brand\" is identical in ca and es — translated, or missed? \"Clínica Dental Catiana Bauçà…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"common.brandShort\" is identical in ca and es — translated, or missed? \"Clínica Dental Catiana Bauçà · Inca…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"common.footer.address\" is identical in ca and es — translated, or missed? \"Av. Gran Via de Colom 15, Inca…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.facts.0.value\" is identical in ca and es — translated, or missed? \"Av. Gran Via de Colom 15, Inca…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.clinic.quote\" is identical in ca and es — translated, or missed? \"«Sin duda mi clínica dental de confianza…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.reviews.items.0.quote\" is identical in ca and es — translated, or missed? \"«Llevo más de 6 años siendo clienta y pa…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.reviews.items.1.quote\" is identical in ca and es — translated, or missed? \"«Es una persona muy cercana y realmente …\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.reviews.items.2.quote\" is identical in ca and es — translated, or missed? \"«Hace muchos años que voy y el trato sie…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.contact.addressValue\" is identical in ca and es — translated, or missed? \"Av. Gran Via de Colom 15, Local 6…\""
+    },
+    {
+      "page": "/ca/",
+      "level": "warn",
+      "check": "seo",
+      "detail": "meta description is 173 chars"
+    },
+    {
+      "page": "/ca/",
+      "level": "fail",
+      "check": "seo",
+      "detail": "no JSON-LD structured data — a local business needs LocalBusiness or a subtype"
+    },
+    {
+      "page": "/ca/",
+      "level": "fail",
+      "check": "seo",
+      "detail": "placeholder text shipped: \"TODO\""
+    },
+    {
+      "page": "/es/",
+      "level": "warn",
+      "check": "seo",
+      "detail": "meta description is 179 chars"
+    },
+    {
+      "page": "/es/",
+      "level": "fail",
+      "check": "seo",
+      "detail": "no JSON-LD structured data — a local business needs LocalBusiness or a subtype"
+    },
+    {
+      "page": "/es/",
+      "level": "fail",
+      "check": "seo",
+      "detail": "placeholder text shipped: \"TODO\""
+    },
+    {
+      "page": "/ca/",
+      "level": "warn",
+      "check": "weight",
+      "detail": "third-party stylesheet blocks first paint: https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+    },
+    {
+      "page": "/es/",
+      "level": "warn",
+      "check": "weight",
+      "detail": "third-party stylesheet blocks first paint: https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+    }
+  ]
+}

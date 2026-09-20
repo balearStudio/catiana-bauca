@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Seo } from "../components/Seo";
+import { StructuredData } from "../components/StructuredData";
 import { useHomeMotion } from "../lib/motion";
 import { Hero } from "../components/sections/Hero";
 import { NameBand } from "../components/sections/NameBand";
@@ -24,6 +25,7 @@ export function Home() {
   return (
     <div ref={root}>
       <Seo path="" title={t("meta.title")} description={t("meta.description")} />
+      <StructuredData />
       <Hero />
       <NameBand />
       <Clinic />

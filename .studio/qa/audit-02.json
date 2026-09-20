@@ -1,0 +1,60 @@
+{
+  "dist": "/Users/christianreyes/Documents/Web/catiana-bauca/dist",
+  "languages": [
+    "ca",
+    "es"
+  ],
+  "pages": [
+    "/ca/",
+    "/es/"
+  ],
+  "externalLinks": [
+    "https://www.google.com/maps/dir/?api=1&amp;destination=Cl%C3%ADnica%20Dental%20Catiana%20Bau%C3%A7%C3%A0%2C%20Av.%20Gran%20Via%20de%20Colom%2015%2C%2007300%20Inca",
+    "https://catiana-bauca.dev.balearstudio.com/ca/",
+    "https://catiana-bauca.dev.balearstudio.com/es/"
+  ],
+  "weight": {
+    "/ca/": {
+      "totalKb": 788,
+      "breakdown": {
+        "html": 13,
+        "js": 446,
+        "css": 14,
+        "webp": 316
+      }
+    },
+    "/es/": {
+      "totalKb": 788,
+      "breakdown": {
+        "html": 13,
+        "js": 446,
+        "css": 14,
+        "webp": 316
+      }
+    }
+  },
+  "summary": {
+    "fail": 0,
+    "warn": 3
+  },
+  "findings": [
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"common.brandShort\" is identical in ca and es — translated, or missed? \"Clínica Dental Catiana Bauçà · Inca…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.facts.0.value\" is identical in ca and es — translated, or missed? \"Av. Gran Via de Colom 15, Inca…\""
+    },
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.contact.addressValue\" is identical in ca and es — translated, or missed? \"Av. Gran Via de Colom 15, Local 6…\""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "dist": "/Users/christianreyes/Documents/Web/catiana-bauca/dist",
+  "languages": [
+    "ca",
+    "es"
+  ],
+  "pages": [
+    "/ca/",
+    "/es/"
+  ],
+  "externalLinks": [
+    "https://www.google.com/maps/dir/?api=1&amp;destination=Cl%C3%ADnica%20Dental%20Catiana%20Bau%C3%A7%C3%A0%2C%20Av.%20Gran%20Via%20de%20Colom%2015%2C%2007300%20Inca",
+    "https://catiana-bauca.dev.balearstudio.com/ca/",
+    "https://catiana-bauca.dev.balearstudio.com/es/"
+  ],
+  "weight": {
+    "/ca/": {
+      "transferKb": 584,
+      "note": "text gzipped, images and fonts as-is. Fonts are counted in full; unicode-range subsetting means a real visitor downloads fewer, so this figure is a ceiling.",
+      "breakdown": {
+        "html": 4,
+        "js": 150,
+        "css": 4,
+        "webp": 316,
+        "woff2": 111
+      }
+    },
+    "/es/": {
+      "transferKb": 584,
+      "note": "text gzipped, images and fonts as-is. Fonts are counted in full; unicode-range subsetting means a real visitor downloads fewer, so this figure is a ceiling.",
+      "breakdown": {
+        "html": 4,
+        "js": 150,
+        "css": 4,
+        "webp": 316,
+        "woff2": 111
+      }
+    }
+  },
+  "summary": {
+    "fail": 0,
+    "warn": 1
+  },
+  "findings": [
+    {
+      "page": "(content)",
+      "level": "warn",
+      "check": "i18n",
+      "detail": "\"home.facts.0.value\" is identical in ca and es — translated, or missed? \"Av. Gran Via de Colom 15, Inca…\""
+    }
+  ]
+}

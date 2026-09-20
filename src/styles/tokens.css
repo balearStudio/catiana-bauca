@@ -32,8 +32,11 @@
   --color-row-hover: #f3f7f8; /* treatments row tint, the only hover fill */
 
   /* --- Type ---------------------------------------------------------- */
-  --font-heading: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* "Archivo Variable" is the family name @fontsource-variable declares; the
+     plain name is kept after it so a Google-hosted or locally installed
+     Archivo still matches. */
+  --font-heading: "Archivo Variable", Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Archivo Variable", Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Used only where a patient speaks. */
   --font-quote: "Instrument Serif", Georgia, "Times New Roman", serif;
 
