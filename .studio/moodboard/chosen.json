@@ -1,0 +1,27 @@
+{
+  "chosenAt": "2026-09-20", "approvedBy": "admin",
+  "direction": "calm-horizon-clinic", "aesthetic": "calm-horizon-clinic",
+  "adjustments": [
+    "Typefaces rejected in the first round for being chosen by exclusion rather than from evidence; replaced with Cabinet Grotesk + Switzer after probing three award-winning dental sites.",
+    "Palette replaced with colours sampled from the clinic's own fascia; the invented pale aqua was dropped.",
+    "Dominant moved from a light field to navy, to differentiate from identalinca.com (Awwwards-listed competitor in the same town, black on white)."
+  ],
+  "palette": [
+    {"name":"Nit","hex":"#16294A","role":"dominant / background"},
+    {"name":"Verd","hex":"#9BD154","role":"accent, CTA only"},
+    {"name":"Blau","hex":"#6FC0DC","role":"secondary, hairlines"},
+    {"name":"Blanc","hex":"#FFFFFF","role":"text on Nit"},
+    {"name":"Nit fosc","hex":"#0E1B33","role":"inset panels"}
+  ],
+  "typography": [
+    {"role":"display","typeface":"Cabinet Grotesk","source":"Fontshare","weights":[800]},
+    {"role":"text","typeface":"Switzer","source":"Fontshare","weights":[400,500,600]}
+  ],
+  "heroLayout": "panoramic horizon band on a navy field, headline overlapping the photo's lower edge",
+  "sections": ["hero horizon","fear first (single verbatim quote, no image)","treatments as a quiet index","t'ho ensenyam (3D scan)","team portraits overlapped","how to recognise the door","week grid + phone"],
+  "signatureMotion": "a 1px blue horizon rule draws left to right across the hero once on load; reduced motion shows it drawn",
+  "imagery": "8 of 10 catalogued photos; real phone snapshots, not disguised; no stock",
+  "registryOverride": null,
+  "criticVerdict": "round 1 BLOCK (contrast, invented fact, thin tails, repetition) — all fixed; owner then rejected typefaces, rebuilt from reference evidence",
+  "rejected": ["named-practice-editorial: owner picked direction 1","show-you-transparent: owner picked direction 1"]
+}

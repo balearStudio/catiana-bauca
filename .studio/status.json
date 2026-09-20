@@ -1,6 +1,6 @@
 {
   "slug": "catiana-bauca",
-  "stage": "moodboard",
+  "stage": "design",
   "stages": [
     "intake",
     "research",
@@ -18,9 +18,9 @@
       "approvedAt": "2026-09-20T10:10:52.699Z"
     },
     "checkpoint-2-moodboard": {
-      "status": "pending",
-      "approvedBy": null,
-      "approvedAt": null
+      "status": "approved",
+      "approvedBy": "admin",
+      "approvedAt": "2026-09-20T10:48:55.287Z"
     },
     "checkpoint-3-preview": {
       "status": "pending",
@@ -31,7 +31,8 @@
   "design": {
     "route": null,
     "timeSpentMinutes": null,
-    "rating": null
+    "rating": null,
+    "startedAt": "2026-09-20T10:48:55Z"
   },
   "preview": {
     "url": null,
@@ -61,8 +62,26 @@
       "stage": "moodboard",
       "event": "stage-change",
       "note": null
+    },
+    {
+      "at": "2026-09-20T10:48:55.289Z",
+      "stage": "moodboard",
+      "event": "checkpoint-approved:checkpoint-2-moodboard",
+      "note": null
+    },
+    {
+      "at": "2026-09-20T10:48:55.367Z",
+      "stage": "design",
+      "event": "stage-change",
+      "note": null
+    },
+    {
+      "at": "2026-09-20T10:48:55.455Z",
+      "stage": "design",
+      "event": "set:design.startedAt",
+      "note": null
     }
   ],
   "createdAt": "2026-09-20T10:03:08.997Z",
-  "updatedAt": "2026-09-20T10:10:52.770Z"
+  "updatedAt": "2026-09-20T10:48:55.456Z"
 }

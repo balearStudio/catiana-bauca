@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Dental Catiana Bauçà — Dentista a Inca</title>
+<meta name="description" content="Odontologia a Inca amb temps per explicar-t'ho tot. Caries, implants, ortodòncia i estètica. Demana hora al 871 02 51 68.">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nit:#16294A; --nit-fosc:#0E1B33; --verd:#9BD154; --blau:#6FC0DC; --blanc:#FFFFFF;
+  --display:'Cabinet Grotesk',sans-serif; --text:'Switzer',sans-serif;
+  --fs-sm:.85rem; --fs-base:1.0625rem; --fs-lg:1.33rem; --fs-xl:1.85rem; --fs-2xl:2.6rem;
+  --fs-display:clamp(2.6rem,6.5vw,5.6rem);
+  --u:8px; --gut:clamp(20px,5vw,72px); --sec:clamp(64px,10vw,128px);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--nit);color:var(--blanc);font:400 var(--fs-base)/1.55 var(--text);-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-weight:600;line-height:1.2}
+p{margin:0;max-width:68ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--verd);outline-offset:3px}
+.pad{padding-left:var(--gut);padding-right:var(--gut)}
+.sec{padding-top:var(--sec);padding-bottom:var(--sec)}
+.eyebrow{font-size:var(--fs-sm);font-weight:500;color:var(--blau)}
+h2.sh{font-family:var(--text);font-weight:600;font-size:var(--fs-lg);margin-bottom:28px}
+.btn{display:inline-block;background:var(--verd);color:var(--nit);font-family:var(--text);font-weight:600;
+  text-decoration:none;padding:16px 26px;font-size:var(--fs-base)}
+.btn:hover{background:var(--blanc)}
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
+.mark{display:flex;flex-direction:column;gap:5px;text-decoration:none;font-weight:600;line-height:1.15;font-size:.95rem}
+.stripe{display:flex;height:3px;width:76px}
+.stripe i{flex:1}.stripe i:first-child{background:var(--verd)}.stripe i:last-child{background:var(--blau)}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap;font-size:var(--fs-sm);font-weight:500}
+nav a{text-decoration:none}nav a:hover{text-decoration:underline}
+.tel{font-weight:600}
+/* hero: wide short band, headline overlapping its lower edge */
+.hero{padding-top:clamp(28px,5vw,64px)}
+.band{position:relative;width:100%;aspect-ratio:21/9;min-height:230px;overflow:hidden;background:var(--nit-fosc)}
+.band img{width:100%;height:100%;object-fit:cover;object-position:58% 14%}
+.rule{position:relative;height:1px;background:rgba(111,192,220,.25)}
+.rule i{position:absolute;inset:0;background:var(--blau);transform-origin:left center}
+.hero h1{font-family:var(--display);font-weight:800;font-size:var(--fs-display);line-height:1.02;
+  letter-spacing:-.02em;max-width:17ch;margin-top:-.42em;position:relative;z-index:2}
+.hero .under{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(24px,4vw,64px);align-items:end;margin-top:34px}
+.hero .sub{font-size:var(--fs-lg);max-width:30ch}
+.hero .act{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.proof{font-size:var(--fs-sm);color:var(--blau)}
+/* 2 fear */
+.fear{border-top:1px solid rgba(155,209,84,.5);padding-top:44px}
+.fear .intro{color:rgba(255,255,255,.72);margin-bottom:26px;max-width:52ch}
+blockquote{margin:0}
+.fear q{font-family:var(--display);font-weight:800;font-size:var(--fs-2xl);line-height:1.12;letter-spacing:-.015em;quotes:'«' '»';display:block;max-width:22ch}
+.fear cite{display:block;margin-top:18px;font-style:normal;font-size:var(--fs-sm);color:var(--blau)}
+/* 3 treatments index */
+.tr{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,4vw,56px);align-items:stretch}
+.idx{border-top:1px solid rgba(111,192,220,.3)}
+.idx a{display:grid;grid-template-columns:minmax(9rem,15rem) 1fr;gap:18px;padding:17px 0;
+  border-bottom:1px solid rgba(111,192,220,.3);text-decoration:none;align-items:baseline}
+.idx a:hover{border-bottom-color:var(--blau)}
+.idx b{font-weight:600}
+.idx span{color:rgba(255,255,255,.72);font-size:.97rem}
+.tr figure{margin:0;position:sticky;top:32px}
+.tr img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.tr figcaption{font-size:var(--fs-sm);color:var(--blau);margin-top:10px}
+/* 4 show */
+.show{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:center}
+.show .ph{margin:0}
+.show .ph img{width:100%;height:100%;max-height:600px;object-fit:cover;display:block}
+.show .tx{padding:clamp(28px,5vw,72px)}
+.show h2{font-family:var(--display);font-weight:800;font-size:var(--fs-xl);line-height:1.1;letter-spacing:-.015em;margin-bottom:20px;max-width:16ch}
+.show .q{margin-top:26px;font-size:.97rem;color:rgba(255,255,255,.75);border-left:2px solid var(--blau);padding-left:16px}
+/* 5 team: overlapped at different depths */
+.team{position:relative;min-height:440px}
+.people{position:relative;height:470px;max-width:760px}
+.people figure{position:absolute;margin:0;width:230px}
+.people figure img{filter:saturate(.95)}
+.people img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.people figcaption{font-size:var(--fs-sm);margin-top:0;padding:9px 12px 0 0;color:rgba(255,255,255,.85);background:var(--nit);position:relative;z-index:4;display:inline-block}
+.p1{left:0;top:44px}
+.p2{left:206px;top:0;z-index:2;width:262px}
+.p3{left:446px;top:104px}
+.team .note{max-width:34ch;margin-top:18px;color:rgba(255,255,255,.72)}
+/* 6 recognise */
+.rec{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,28px);align-items:end}
+.rec img{width:100%;height:100%;max-height:340px;object-fit:cover;display:block}
+.addr{margin-top:30px}
+.addr .line{font-family:var(--display);font-weight:800;font-size:var(--fs-lg);letter-spacing:-.01em}
+.addr .stripe{margin-top:12px;width:132px;height:4px}
+/* 7 hours */
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:26px 0 30px;max-width:620px}
+.week div{text-align:center}
+.week span{display:block;font-size:var(--fs-sm);color:rgba(255,255,255,.7);margin-bottom:8px}
+.week i{display:block;height:72px;border:1px solid rgba(111,192,220,.35)}
+.week .on i{background:var(--verd);border-color:var(--verd)}
+.bigtel{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5.4vw,3.4rem);letter-spacing:-.02em;text-decoration:none;display:inline-block}
+.bigtel:hover{color:var(--verd)}
+.confirm{font-size:var(--fs-sm);color:var(--blau);margin-top:14px}
+footer{border-top:1px solid rgba(111,192,220,.3);padding-top:26px;padding-bottom:40px;font-size:var(--fs-sm);color:rgba(255,255,255,.7)}
+@media(max-width:860px){
+  .hero .under,.tr,.show,.rec{grid-template-columns:1fr}
+  .hero h1{margin-top:-.2em}
+  .band{aspect-ratio:16/10}
+  .show .tx{padding:32px var(--gut)}
+  .people{height:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;max-width:none}
+  .people figure{position:static;width:auto}
+  .p2{width:auto}
+  .idx a{grid-template-columns:1fr;gap:4px}
+  .week{gap:4px}.week i{height:52px}
+}
+</style>
+</head>
+<body>
+<header class="pad">
+  <a class="mark" href="#top">Clínica Dental<br>Catiana Bauçà<span class="stripe"><i></i><i></i></span></a>
+  <nav aria-label="Principal">
+    <a href="#tractaments">Tractaments</a><a href="#ensenyam">T'ho ensenyam</a><a href="#equip">L'equip</a><a href="#onsom">On som</a>
+    <a class="tel" href="tel:+34871025168">871 02 51 68</a>
+    <a href="#" hreflang="es" lang="es" style="border:1px solid rgba(255,255,255,.4);padding:3px 9px">ES</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero pad">
+  <figure class="band" style="margin:0">
+    <img src="../assets/places-10.jpg" alt="Una pacient rep un blanquejament sota la làmpada blava, amb una platja projectada a la pantalla del sostre">
+  </figure>
+  <div class="rule"><i id="horizon"></i></div>
+  <h1>Anar al dentista pot ser un dia tranquil.</h1>
+  <div class="under">
+    <p class="sub">Odontologia a Inca, amb temps per explicar-t'ho tot abans de començar.</p>
+    <div class="act">
+      <a class="btn" href="tel:+34871025168">Demana hora — 871 02 51 68</a>
+      <p class="proof">4,8 sobre 5 a Google, amb 68 ressenyes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec pad">
+  <div class="fear">
+    <p class="intro">La por al dentista és el motiu més comú per no venir-hi. Ho sabem, i per això anam a poc a poc.</p>
+    <blockquote>
+      <q lang="es">Sin duda mi clínica dental de confianza. Superados mis miedos gracias a todo el personal.</q>
+      <cite>Ressenya de Google</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="sec pad" id="tractaments">
+  <h2 class="sh">Tractaments</h2>
+  <div class="tr">
+    <div class="idx">
+      <a href="#"><b>Conservadora</b><span>Caries i empastes: arreglar la dent i conservar-la.</span></a>
+      <a href="#"><b>Odontopediatria</b><span>Nins i nines, des de la primera revisió.</span></a>
+      <a href="#"><b>Periodòncia</b><span>Genives que sagnen o que es retiren.</span></a>
+      <a href="#"><b>Ortodòncia</b><span>Posar les dents al seu lloc, amb brackets o fèrules.</span></a>
+      <a href="#"><b>Estètica</b><span>Blanquejament i retocs de color i forma.</span></a>
+      <a href="#"><b>Cirurgia i implants</b><span>Treure una dent, o posar-ne una de fixada a l'os.</span></a>
+      <a href="#"><b>Pròtesi</b><span>Dents fixes o removibles quan en falten diverses.</span></a>
+      <a href="#"><b>ATM</b><span>Dolor de mandíbula, cruixits i bruxisme.</span></a>
+    </div>
+    <figure>
+      <img src="../assets/places-03.jpg" alt="La vitrina de la clínica, amb els tractaments retolats al vidre">
+      <figcaption>Els mateixos termes, retolats a la seva vitrina.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="show" id="ensenyam">
+  <figure class="ph"><img src="../assets/places-02.jpg" alt="Una higienista mostra a un pacient l'escàner 3D de la seva boca en una pantalla"></figure>
+  <div class="tx">
+    <h2>T'ho ensenyam abans de tocar res.</h2>
+    <p>Feim un escàner 3D de la teva boca i el miram junts a la pantalla. Veus exactament el mateix que veim nosaltres, i d'aquí surten el pla de tractament i el pressupost.</p>
+    <p class="q" lang="es">«Te atienden amablemente, te enseñan, corrigen y gracias a ello mejoras mucho» — Ressenya de Google</p>
+  </div>
+</section>
+
+<section class="sec pad team" id="equip">
+  <h2 class="sh">Qui t'atén</h2>
+  <div class="people">
+    <figure class="p1"><img src="../assets/places-05.jpg" alt="Membre de l'equip amb l'aparell de neteja GBT"><figcaption>[CONFIRM: nom] — neteges i higiene</figcaption></figure>
+    <figure class="p2"><img src="../assets/places-04.jpg" alt="La Dra. Catiana Bauçà a la recepció de la clínica"><figcaption>Dra. Catiana Bauçà</figcaption></figure>
+    <figure class="p3"><img src="../assets/places-08.jpg" alt="Una odontòloga de l'equip treballant al gabinet"><figcaption>[CONFIRM: nom i càrrec]</figcaption></figure>
+  </div>
+  <p class="note">La doctora et visita i t'explica el pla; l'equip t'acompanya la resta del camí.</p>
+</section>
+
+<section class="sec pad" id="onsom">
+  <h2 class="sh">Com reconèixer la clínica</h2>
+  <div class="rec">
+    <img src="../assets/places-07.jpg" alt="Els porxos del carrer, amb el local de la clínica a la planta baixa">
+    <img src="../assets/places-01.jpg" alt="El rètol negre de la clínica amb la franja verda i blava">
+  </div>
+  <div class="addr">
+    <p>Som a la Gran Via de Colom, 15, en un local de planta baixa sota els porxos. És fàcil passar-hi de llarg: cerca el rètol negre amb la franja verda i blava.</p>
+    <p class="line" style="margin-top:18px">Av. Gran Via de Colom, 15, local 6 · 07300 Inca</p>
+    <span class="stripe"><i></i><i></i></span>
+  </div>
+</section>
+
+<section class="sec pad">
+  <h2 class="sh">Demana hora</h2>
+  <div class="week" role="img" aria-label="Obert de dilluns a dijous; divendres, dissabte i diumenge tancat">
+    <div class="on"><span>dl</span><i></i></div><div class="on"><span>dt</span><i></i></div>
+    <div class="on"><span>dc</span><i></i></div><div class="on"><span>dj</span><i></i></div>
+    <div><span>dv</span><i></i></div><div><span>ds</span><i></i></div><div><span>dg</span><i></i></div>
+  </div>
+  <a class="bigtel" href="tel:+34871025168">871 02 51 68</a>
+  <p class="confirm">10.00–14.00 i 16.00–20.00 [CONFIRM: horari partit o seguit] · [CONFIRM: correu electrònic]</p>
+</section>
+</main>
+<footer class="pad">Clínica Dental Catiana Bauçà · Av. Gran Via de Colom, 15, local 6, 07300 Inca · 871 02 51 68</footer>
+
+<script>
+(function(){
+  var r=document.getElementById('horizon');
+  if(!r) return;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!r.animate){r.style.transform='scaleX(1)';return;}   // fallback: already drawn
+  r.style.transform='scaleX(0)';
+  r.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],
+    {duration:1200,easing:'cubic-bezier(.22,.61,.36,1)',fill:'forwards'});
+})();
+</script>
+</body>
+</html>
