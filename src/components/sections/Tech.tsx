@@ -9,11 +9,11 @@ interface TechItem {
 // Image order is fixed by the design, so it lives here rather than in the
 // translations: the copy changes per language, the photographs do not.
 // Dimensions are the real ones from `scripts/images.mjs`, which crops each
-// source to 4:3 — a wrong pair here reserves the wrong box and shifts layout.
+// source to 4:5 — a wrong pair here reserves the wrong box and shifts layout.
 const IMAGES = [
-  { file: "scan-3d", width: 752, height: 564 },
-  { file: "catiana-gbt", width: 900, height: 675 },
-  { file: "whitening", width: 900, height: 675 },
+  { file: "scan-3d", width: 752, height: 940 },
+  { file: "catiana-gbt", width: 900, height: 1125 },
+  { file: "whitening", width: 900, height: 1125 },
 ] as const;
 
 /**
@@ -40,6 +40,14 @@ export function Tech() {
               <div className="tech__frame">
                 <img
                   src={`/images/${IMAGES[index].file}.webp`}
+                  srcSet={
+                    `/images/${IMAGES[index].file}-600.webp 600w, ` +
+                    `/images/${IMAGES[index].file}.webp ${IMAGES[index].width}w`
+                  }
+                  // `sizes` is read by the preload scanner before any CSS
+                  // exists, so it cannot use a custom property — the gutter is
+                  // written out literally.
+                  sizes="(max-width: 719px) calc(100vw - 40px), (max-width: 1099px) 45vw, 400px"
                   alt={item.alt}
                   width={IMAGES[index].width}
                   height={IMAGES[index].height}

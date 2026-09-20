@@ -2,10 +2,10 @@
   "url": "http://localhost:4321/es/",
   "reducedMotion": false,
   "results": {
-    "mobile": {
+    "small": {
       "overflow": {
-        "scrollWidth": 390,
-        "clientWidth": 390,
+        "scrollWidth": 320,
+        "clientWidth": 320,
         "culprits": []
       },
       "contrast": [],
@@ -14,15 +14,15 @@
       "invisible": [],
       "fold": {
         "node": "section#inici.hero.container",
-        "bottom": 1054,
-        "viewport": 844,
+        "bottom": 715,
+        "viewport": 568,
         "headerHeight": 73,
-        "overflowsFoldBy": 210
+        "overflowsFoldBy": 147
       },
       "fonts": {
         "h1": {
           "family": "Archivo Variable",
-          "size": 34,
+          "size": 41.6,
           "weight": "600"
         },
         "h2": {
@@ -44,7 +44,93 @@
       "invisibleBeforeScroll": [
         {
           "node": "div.treatments__row",
-          "text": "01ConservadoraCaries, empastes y reconst"
+          "text": "01ConservadorCaries, empastes y reconstr"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "02EndodonciaTratamiento de conductos cua"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "03PeriodonciaEncías que sangran, retracc"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "04OdontopediatríaPrimeras visitas, revis"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "05OrtodonciaCorrección de la mordida en "
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "06EstéticaBlanqueamiento y restauracione"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "07Cirugía e implantesExtracciones, impla"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "08Prótesis y ATMPrótesis fijas y removib"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Llevo más de 6 años siendo clienta y pa"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Es una persona muy cercana y realmente "
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«… hace muchos años que voy y el trato s"
+        }
+      ]
+    },
+    "mobile": {
+      "overflow": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [],
+      "targets": [],
+      "invisible": [],
+      "fold": {
+        "node": "section#inici.hero.container",
+        "bottom": 817,
+        "viewport": 844,
+        "headerHeight": 73,
+        "overflowsFoldBy": -27
+      },
+      "fonts": {
+        "h1": {
+          "family": "Archivo Variable",
+          "size": 50.7,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo Variable",
+          "size": 30,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo Variable",
+          "size": 19,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo Variable",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": [
+        {
+          "node": "div.treatments__row",
+          "text": "01ConservadorCaries, empastes y reconstr"
         },
         {
           "node": "div.treatments__row",
@@ -100,10 +186,10 @@
       "invisible": [],
       "fold": {
         "node": "section#inici.hero.container",
-        "bottom": 729,
+        "bottom": 590,
         "viewport": 1194,
         "headerHeight": 73,
-        "overflowsFoldBy": -465
+        "overflowsFoldBy": -604
       },
       "fonts": {
         "h1": {
@@ -130,7 +216,7 @@
       "invisibleBeforeScroll": [
         {
           "node": "div.treatments__row",
-          "text": "01ConservadoraCaries, empastes y reconst"
+          "text": "01ConservadorCaries, empastes y reconstr"
         },
         {
           "node": "div.treatments__row",
@@ -216,7 +302,7 @@
       "invisibleBeforeScroll": [
         {
           "node": "div.treatments__row",
-          "text": "01ConservadoraCaries, empastes y reconst"
+          "text": "01ConservadorCaries, empastes y reconstr"
         },
         {
           "node": "div.treatments__row",

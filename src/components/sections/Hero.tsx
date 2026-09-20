@@ -1,20 +1,19 @@
 import { useTranslation } from "react-i18next";
 import { DIRECTIONS_URL, PHONE_TEL } from "../../lib/contact";
 
-interface Fact {
-  label: string;
-  value: string;
-}
-
 /**
  * Section 1. The signature composition: the doctor, cut out on a transparent
  * background, standing on a block of the clinic's own cyan and overflowing its
  * top edge, with the Google rating overlapping its left edge.
+ *
+ * The design put an address/hours/phone bar under this. It came out on the
+ * owner's call: all three facts already have a home in "Demana hora", and
+ * repeating them in the first screen bought nothing. Removing it also gave the
+ * hero back the room it needed to fit a phone screen.
  */
 export function Hero() {
   const { t } = useTranslation("home");
   const { t: tc } = useTranslation("common");
-  const facts = t("facts", { returnObjects: true }) as Fact[];
 
   return (
     <section id="inici" className="hero container">
@@ -73,21 +72,6 @@ export function Hero() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="facts">
-        {facts.map((fact) => (
-          <div className="facts__item" key={fact.label}>
-            <div className="facts__label">{fact.label}</div>
-            <div className="facts__value">
-              {fact.value === tc("phoneLabel") ? (
-                <a href={`tel:${PHONE_TEL}`}>{fact.value}</a>
-              ) : (
-                fact.value
-              )}
-            </div>
-          </div>
-        ))}
       </div>
     </section>
   );

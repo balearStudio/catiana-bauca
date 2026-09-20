@@ -36,19 +36,18 @@ const manifest = [
   { src: "catiana-hero.png", out: "catiana-hero", width: 704, alpha: true, widths: [480] },
   // Right column of "La clínica", 240px tall across roughly half the container.
   { src: "arcade.jpg", out: "arcade", width: 1200 },
-  // The three cards in the dark section: ~400px wide at 1280, so 900 at 2x.
-  { src: "scan-3d.png", out: "scan-3d", width: 900, crop: { aspect: 4 / 3, top: 0.223 } },
-  // 0.46 started below her chin: the tile showed a headless torso beside the
-  // machine, on a site whose whole idea is putting a person in front of you.
-  // 0.21 keeps her face and the top of the machine; the base falls out.
-  { src: "catiana-gbt.jpg", out: "catiana-gbt", width: 900, crop: { aspect: 4 / 3, top: 0.21 } },
-  // 0.175 cut the ceiling screen down to an unreadable sliver — and the beach
-  // playing on it is the reason the brief calls this one of the three best
-  // photographs. 0.05 keeps the screen and the lamp together.
-  // Magnific 2x, conservative (creativity -3, resemblance 4): the brief called
-  // places-10 the weakest photograph on the page. Denoise and sharpen only —
-  // the geometry was compared against the original before accepting it.
-  { src: "whitening-enhanced.jpg", out: "whitening", width: 900, crop: { aspect: 4 / 3, top: 0.05 } },
+  // The three tiles in the dark section. They were 4:3 landscape, which no
+  // crop of these sources could satisfy: the GBT frame held either the dentist
+  // or the machine but never both, and the whitening frame had to choose
+  // between the ceiling screen and the patient. Portrait 4:5 holds the whole
+  // subject in all three, and three portrait tiles in a row is a better
+  // editorial shape for what these photographs actually are.
+  { src: "scan-3d.png", out: "scan-3d", width: 900, widths: [600], crop: { aspect: 4 / 5, top: 0.12 } },
+  // Doctor's face down to the GBT label and the monogram.
+  { src: "catiana-gbt.jpg", out: "catiana-gbt", width: 900, widths: [600], crop: { aspect: 4 / 5, top: 0.2 } },
+  // Magnific 2x, conservative (creativity -3, resemblance 4). Framed low so the
+  // patient and the lamp are the subject, with the ceiling screen above them.
+  { src: "whitening-enhanced.jpg", out: "whitening", width: 900, widths: [600], crop: { aspect: 4 / 5, top: 0.06 } },
   // Contact photo: half the container on desktop, full width on a phone, so
   // it is the one image where one file cannot serve both well.
   {

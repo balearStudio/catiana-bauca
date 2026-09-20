@@ -62,7 +62,7 @@ Set as a design element: the name band, `CATIANA BAUÇÀ` sized to the exact pag
 
 ### 1. Hero — la doctora
 - Job: put a person in front of the visitor, name the town, and give the phone number, in one screen.
-- Content: eyebrow, *"Venir al dentista sense por."*, one supporting paragraph, phone CTA + secondary CTA, rating card.
+- Content: eyebrow, *"Venir al dentista sense por."*, one supporting paragraph, phone CTA + secondary CTA, rating card. **No fact bar** — the design put address/hours/phone here; owner's call, it is redundant with "Demana hora" and removing it gave the hero back the room to fit a phone screen.
 - Media: `catiana-hero.png` — a **Magnific cutout** of the dentist on a transparent background.
 - Device: she stands on a cyan gradient panel and **overflows its top edge** (`height:112%, bottom:0`); the 4,8★ card overlaps its left edge. Two planes and a person breaking out of one of them.
 - Motion (signature): the cyan panel wipes up from its base, she rises into it, the rating card settles last. ~1.1s, `power3.out`.
@@ -90,7 +90,7 @@ Set as a design element: the name band, `CATIANA BAUÇÀ` sized to the exact pag
 - Job: the real differentiator — you are shown your own mouth before anything is done.
 - Content: three items: 3D scanner, GBT cleaning, whitening.
 - Media: `scan-3d`, `catiana-gbt`, `whitening`.
-- Device: the page's **one dark section**, Nit teal, full bleed. The only inversion on the page, so it lands as a chapter break.
+- Device: the page's **one dark section**, Nit teal, full bleed. The only inversion on the page, so it lands as a chapter break. Tiles are **4:5 portrait**, not the design's 4:3 — no landscape crop of these sources could hold the whole subject, and the GBT frame in particular held either the dentist or the machine but never both.
 - Motion: the three images scale 1.06 → 1 on scroll-scrub — depth, not a reveal.
 
 ### 6. Ressenyes
@@ -129,7 +129,7 @@ The moodboard direction banned scroll motion; this design does not, and the owne
 - **Reduced motion: every element renders in its final state and nothing moves.** "From" states are set in JS, never CSS, so the prerendered HTML is visible without JavaScript.
 
 ## Voice
-Warm, plain, personal, first person plural, Mallorcan Catalan forms (*feim*, *ensenyam*, *mirem*). Catalan is primary; Spanish is **written natively, not translated**. Patient quotes stay **verbatim in Spanish** in both versions and are never re-voiced.
+Warm, plain, personal, first person plural, Mallorcan Catalan forms (*feim*, *ensenyam*, *concertam*). **Professional, not chatty**: the register is a clinic talking to a patient, not a blog. Owner's revisions, 2026-09-20, removed conversational asides ("no és una franquícia ni un centre de pas", "amb l'escàner a la mà", "ningú es queda amb dubtes ni signa res sense entendre-ho") and the small-clinic framing ("clínica petita") in favour of **tracte proper i personal** — the personal relationship is the selling point, not the size of the premises. Catalan is primary; Spanish is **written natively, not translated**. Patient quotes stay **verbatim in Spanish** in both versions and are never re-voiced.
 
 ## Do
 - Use her name; patients do.

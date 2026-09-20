@@ -15,24 +15,24 @@
   ],
   "weight": {
     "/ca/": {
-      "transferKb": 591,
+      "transferKb": 678,
       "note": "text gzipped, images and fonts as-is. Fonts are counted in full; unicode-range subsetting means a real visitor downloads fewer, so this figure is a ceiling.",
       "breakdown": {
         "html": 4,
         "png": 19,
-        "webp": 303,
+        "webp": 391,
         "js": 150,
         "css": 4,
         "woff2": 111
       }
     },
     "/es/": {
-      "transferKb": 591,
+      "transferKb": 678,
       "note": "text gzipped, images and fonts as-is. Fonts are counted in full; unicode-range subsetting means a real visitor downloads fewer, so this figure is a ceiling.",
       "breakdown": {
         "html": 4,
         "png": 19,
-        "webp": 303,
+        "webp": 391,
         "js": 150,
         "css": 4,
         "woff2": 111
@@ -41,14 +41,7 @@
   },
   "summary": {
     "fail": 0,
-    "warn": 1
+    "warn": 0
   },
-  "findings": [
-    {
-      "page": "(content)",
-      "level": "warn",
-      "check": "i18n",
-      "detail": "\"home.facts.0.value\" is identical in ca and es — translated, or missed? \"Av. Gran Via de Colom 15, Inca…\""
-    }
-  ]
+  "findings": []
 }

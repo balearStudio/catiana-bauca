@@ -1,29 +1,30 @@
 {
   "meta": {
     "title": "Clínica Dental Catiana Bauçà · Dentista en Inca, Mallorca",
-    "description": "Clínica dental pequeña en el centro de Inca. Escáner 3D, limpiezas GBT para bocas sensibles y tiempo para explicártelo todo. Llama al 871 02 51 68."
+    "description": "Clínica dental en Inca con un trato cercano y personal. Escáner 3D, limpiezas GBT para bocas sensibles y tiempo para explicártelo todo. Llama al 871 02 51 68."
   },
   "hero": {
     "eyebrow": "Clínica dental en Inca, Mallorca",
     "headingLine1": "Ir al dentista",
     "headingLine2": "sin miedo.",
-    "lead": "La Dra. Catiana Bauçà lleva años atendiendo a familias de Inca en una clínica pequeña, a pie de calle. Tiempo para explicártelo todo, tecnología para enseñarte tu propia boca y mucha paciencia con quien llega asustado.",
+    "lead": "La Dra. Catiana Bauçà lleva años atendiendo a familias de Inca con un trato cercano y personal. Tiempo para explicártelo todo, tecnología para enseñarte tu propia boca y mucha paciencia con quien llega asustado.",
     "ctaSecondary": "Cómo llegar",
     "portraitAlt": "La Dra. Catiana Bauçà",
     "ratingCount": "68 reseñas en Google"
   },
-  "facts": [
-    { "label": "Dirección", "value": "Av. Gran Via de Colom 15, Inca" },
-    { "label": "Horario", "value": "Lunes a jueves, 10–19 h" },
-    { "label": "Teléfono", "value": "871 02 51 68" }
-  ],
   "nameBand": {
-    "labels": ["Odontóloga", "Implantes", "Estética", "Niños", "Inca"]
+    "labels": [
+      "Odontóloga",
+      "Implantes",
+      "Estética",
+      "Niños",
+      "Inca"
+    ]
   },
   "clinic": {
-    "title": "Una clínica pequeña donde te conocen por tu nombre",
-    "p1": "Estamos en la planta baja de uno de los porches de la Avinguda Gran Via de Colom, en el centro de Inca. No es una franquicia ni un centro de paso: la mayoría de pacientes lleva años viniendo, a menudo toda la familia.",
-    "p2": "Cada visita empieza explicando qué pasa y por qué, con el escáner en la mano si hace falta. Nadie se queda con dudas ni firma nada sin entenderlo.",
+    "title": "Aquí te conocen por tu nombre",
+    "p1": "Estamos en el centro de Inca, en la planta baja de uno de los porches de la Avinguda Gran Via de Colom. La mayoría de pacientes lleva años viniendo, a menudo toda la familia.",
+    "p2": "Cada visita empieza explicando qué pasa y por qué, con el tiempo necesario para que entiendas el tratamiento antes de empezarlo.",
     "quote": "«Sin duda mi clínica dental de confianza. Superados mis miedos gracias a todo el personal, todo el proceso de reconstrucción de mi boca esta siendo increíble. Trato cercano y profesional.»",
     "quoteSource": "Reseña en Google",
     "photoAlt": "Los porches de la Avinguda Gran Via de Colom, con la entrada de la clínica"
@@ -33,7 +34,7 @@
     "intro": "Todo lo que se hace en la clínica.",
     "items": [
       {
-        "name": "Conservadora",
+        "name": "Conservador",
         "desc": "Caries, empastes y reconstrucciones. Salvar el diente propio siempre que sea posible."
       },
       {
@@ -107,7 +108,7 @@
   },
   "contact": {
     "title": "Pide hora",
-    "lead": "Pedir hora es una llamada. Si lo encuentras comunicando, es que estamos con un paciente: vuelve a probar en un rato.",
+    "lead": "Llámanos y concertamos tu visita.",
     "ctaPrimary": "Llama · 871 02 51 68",
     "ctaSecondary": "Cómo llegar",
     "addressLabel": "Dirección",
@@ -117,6 +118,6 @@
     "hoursValue": "Lunes a jueves, 10:00–19:00",
     "hoursValue2": "Viernes, sábado y domingo cerrado",
     "photoAlt": "Fachada de la Clínica Dental Catiana Bauçà en la Avinguda Gran Via de Colom",
-    "caption": "Bajo los porches, a pie llano."
+    "caption": "La fachada de la clínica, en la Avinguda Gran Via de Colom."
   }
 }
