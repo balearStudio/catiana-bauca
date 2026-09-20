@@ -144,6 +144,18 @@ Warm, plain, personal, first person plural, Mallorcan Catalan forms (*feim*, *en
 - Invent her years of practice, her qualifications, prices, or team names.
 - Uppercase anywhere except the 11.5–12px labels.
 
+## Settled — raised in review, decided, do not re-raise
+
+Judgements the owner has already made. A critic or QA pass that reports these again is
+costing a review cycle on a closed question; note them as settled and move on.
+
+- **The Ressenyes section is three white cards, and stays that way.** `visual-qa` called it
+  the most generic section on the page and that reading is fair in the abstract. Owner's
+  call, 2026-09-20: the reviews are the most valuable material this business has — there is
+  no team page, no bio, no prices, no press and no professional photography — so the section
+  earns its place by what it carries, not by how its container looks. Restraint here is the
+  point: the quotes are verbatim, in Spanish, in the serif that is reserved for patients.
+
 ## Banned for this client
 - Global: the anti-generic and substance checklists (`guidelines/aesthetics.md`) and banned phrases (`guidelines/copy.md`).
 - Competitor: `identalinca.com` — Neue Montreal, black on white, card grid, inline line-illustrations.

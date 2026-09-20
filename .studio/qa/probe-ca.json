@@ -12,6 +12,13 @@
       "images": [],
       "targets": [],
       "invisible": [],
+      "fold": {
+        "node": "section#inici.hero.container",
+        "bottom": 1054,
+        "viewport": 844,
+        "headerHeight": 73,
+        "overflowsFoldBy": 210
+      },
       "fonts": {
         "h1": {
           "family": "Archivo Variable",
@@ -91,6 +98,13 @@
       "images": [],
       "targets": [],
       "invisible": [],
+      "fold": {
+        "node": "section#inici.hero.container",
+        "bottom": 729,
+        "viewport": 1194,
+        "headerHeight": 73,
+        "overflowsFoldBy": -465
+      },
       "fonts": {
         "h1": {
           "family": "Archivo Variable",
@@ -170,6 +184,13 @@
       "images": [],
       "targets": [],
       "invisible": [],
+      "fold": {
+        "node": "section#inici.hero.container",
+        "bottom": 900,
+        "viewport": 900,
+        "headerHeight": 73,
+        "overflowsFoldBy": 0
+      },
       "fonts": {
         "h1": {
           "family": "Archivo Variable",
