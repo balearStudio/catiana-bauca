@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FBFAF8; color: #12181C; font-family: Archivo, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0A7FA0; text-decoration: none; }
+  a:hover { color: #12181C; }
+  ::selection { background: #BFE9F4; }
+</style>
+</helmet>
+
+<div style="max-width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:50; background:rgba(251,250,248,0.92); backdrop-filter:blur(8px); border-bottom:1px solid #E6E2DC;">
+    <div style="max-width:1280px; margin:0 auto; padding:14px 28px; display:flex; align-items:center; gap:28px;">
+      <a href="#inici" style="display:flex; align-items:center; gap:10px; color:#12181C;">
+        <img src="images/logo-cb.png" alt="" style="width:34px; height:34px; object-fit:contain;" />
+        <span style="font-size:14px; font-weight:600; letter-spacing:-0.01em;">Clínica Dental Catiana Bauçà</span>
+      </a>
+      <nav style="margin-left:auto; display:flex; gap:26px; flex-wrap:wrap;">
+        <a href="#clinica" style="font-size:13.5px; color:#4A5459;">La clínica</a>
+        <a href="#tractaments" style="font-size:13.5px; color:#4A5459;">Tractaments</a>
+        <a href="#tecnologia" style="font-size:13.5px; color:#4A5459;">Tecnologia</a>
+        <a href="#contacte" style="font-size:13.5px; color:#4A5459;">Contacte</a>
+      </nav>
+      <a href="tel:+34871025168" style="background:#12181C; color:#FBFAF8; font-size:13.5px; font-weight:500; padding:10px 18px; border-radius:999px; white-space:nowrap;" style-hover="background:#0A7FA0;">871 02 51 68</a>
+    </div>
+  </header>
+
+  <section id="inici" style="max-width:1280px; margin:0 auto; padding:clamp(12px,2.4svh,22px) 28px clamp(14px,2.6svh,26px); min-height:calc(100svh - 63px); display:flex; flex-direction:column; justify-content:center; gap:clamp(14px,3svh,32px);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:clamp(20px,3.4svh,40px) 40px; align-items:center;">
+      <div style="min-width:0;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:clamp(12px,2.6svh,26px);">
+          <span style="width:26px; height:1px; background:#0A9DC7;"></span>
+          <span style="font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#6B7479;">Clínica dental a Inca, Mallorca</span>
+        </div>
+        <h1 style="margin:0; font-size:clamp(34px, min(5.6vw, 9.4svh), 80px); line-height:0.96; letter-spacing:-0.035em; font-weight:600; text-wrap:balance;">Venir al dentista<br />sense por.</h1>
+        <p style="margin:clamp(12px,2.4svh,22px) 0 0; max-width:46ch; font-size:clamp(14.5px,min(1.2vw,2.9svh),18px); line-height:1.55; color:#414B50;">La Dra. Catiana Bauçà porta anys atenent famílies d'Inca a una clínica petita, a peu de carrer. Temps per explicar-t'ho tot, tecnologia per ensenyar-te la teva pròpia boca i molta paciència amb qui hi arriba espantat.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:clamp(14px,2.8svh,28px);">
+          <a href="tel:+34871025168" style="background:#0A9DC7; color:#04252F; font-size:clamp(13.5px,1.6svh,15px); font-weight:600; padding:clamp(11px,1.9svh,15px) clamp(18px,2vw,24px); border-radius:999px; white-space:nowrap;" style-hover="background:#12181C; color:#FBFAF8;">871 02 51 68</a>
+          <a href="https://wa.me/34871025168" style="border:1.5px solid #12181C; color:#12181C; font-size:clamp(13.5px,1.6svh,15px); font-weight:500; padding:clamp(9.5px,1.75svh,13.5px) clamp(18px,2vw,24px); border-radius:999px; white-space:nowrap;" style-hover="background:#12181C; color:#FBFAF8;">WhatsApp</a>
+        </div>
+      </div>
+
+      <div style="min-width:0; position:relative; padding-top:clamp(14px,5svh,56px);">
+        <div style="position:relative; border-radius:20px; background:linear-gradient(180deg,#0A9DC7 0%, #0A7FA0 100%); aspect-ratio:4/5; max-height:50svh; width:min(100%, calc(50svh * 0.8)); margin:0 auto;">
+          <img src="images/catiana-hero.png" alt="Dra. Catiana Bauçà" style="position:absolute; bottom:0; left:53%; transform:translateX(-50%); height:112%; width:auto; max-width:none;" />
+          <div style="position:absolute; left:-14px; bottom:18px; z-index:2; background:#FBFAF8; border:1px solid #E6E2DC; border-radius:14px; padding:16px 20px; box-shadow:0 18px 40px -24px rgba(4,37,47,0.5);">
+          <div style="font-size:26px; font-weight:600; letter-spacing:-0.03em;">4,8<span style="color:#0A9DC7;">★</span></div>
+          <div style="font-size:12px; color:#6B7479; margin-top:2px;">68 ressenyes a Google</div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(190px,1fr)); gap:1px; background:#E6E2DC; border:1px solid #E6E2DC; border-radius:14px; overflow:hidden;">
+      <div style="background:#FBFAF8; padding:clamp(10px,1.7svh,16px) 18px;"><div style="font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A9296;">Des de</div><div style="font-size:clamp(14.5px,1.8svh,17px); font-weight:500; margin-top:4px;">Av. Gran Via de Colom 15, Inca</div></div>
+      <div style="background:#FBFAF8; padding:clamp(10px,1.7svh,16px) 18px;"><div style="font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A9296;">Horari</div><div style="font-size:clamp(14.5px,1.8svh,17px); font-weight:500; margin-top:4px;">Dilluns a dijous, 10–19 h</div></div>
+      <div style="background:#FBFAF8; padding:clamp(10px,1.7svh,16px) 18px;"><div style="font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A9296;">Urgències</div><div style="font-size:clamp(14.5px,1.8svh,17px); font-weight:500; margin-top:4px;">Truca i mirem d'encabir-te</div></div>
+    </div>
+  </section>
+
+  <sc-if value="{{ nameBand }}" hint-placeholder-val="{{ true }}">
+    <section style="max-width:1280px; margin:0 auto; padding:80px 28px 0;">
+      <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; border-bottom:1px solid #E6E2DC; padding-bottom:14px;">
+        <span style="font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#8A9296;">Odontòloga</span>
+        <span style="font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#8A9296;">Implants</span>
+        <span style="font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#8A9296;">Estètica</span>
+        <span style="font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#8A9296;">Infants</span>
+        <span style="font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#8A9296;">Inca</span>
+      </div>
+      <div style="font-size:calc((min(100vw, 1280px) - 56px) / 8); line-height:0.9; letter-spacing:-0.045em; font-weight:600; margin-top:18px; white-space:nowrap;">CATIANA BAUÇÀ</div>
+    </section>
+  </sc-if>
+
+  <section id="clinica" style="max-width:1280px; margin:0 auto; padding:96px 28px 0;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:56px; align-items:start;">
+      <div style="min-width:0;">
+        <h2 style="margin:0; font-size:clamp(30px,3.6vw,50px); line-height:1.05; letter-spacing:-0.03em; font-weight:600; max-width:18ch; text-wrap:balance;">Una clínica petita on et coneixen pel nom</h2>
+        <p style="margin:26px 0 0; max-width:52ch; font-size:17px; line-height:1.65; color:#414B50;">Som a la planta baixa d'un dels porxos de l'Avinguda Gran Via de Colom, al centre d'Inca. No és una franquícia ni un centre de pas: la majoria de pacients fa anys que hi vénen, sovint tota la família.</p>
+        <p style="margin:18px 0 0; max-width:52ch; font-size:17px; line-height:1.65; color:#414B50;">Cada visita comença explicant què passa i per què, amb l'escàner a la mà si cal. Ningú es queda amb dubtes ni signa res sense entendre-ho.</p>
+      </div>
+      <div style="min-width:0; display:grid; gap:14px;">
+        <blockquote style="margin:0; border-left:2px solid #0A9DC7; padding:4px 0 4px 22px;">
+          <p style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-size:clamp(22px,2.4vw,30px); line-height:1.3; letter-spacing:-0.01em; color:#12181C;">«Sin duda mi clínica dental de confianza. Superados mis miedos gracias a todo el personal, todo el proceso de reconstrucción de mi boca esta siendo increíble. Trato cercano y profesional.»</p>
+          <footer style="margin-top:14px; font-size:12.5px; color:#8A9296; letter-spacing:0.02em;">Ressenya a Google</footer>
+        </blockquote>
+        <img src="images/arcade.jpg" alt="Els porxos de l'Avinguda Gran Via de Colom, amb l'entrada de la clínica" style="width:100%; height:240px; object-fit:cover; border-radius:14px; margin-top:12px;" />
+      </div>
+    </div>
+  </section>
+
+  <section id="tractaments" style="max-width:1280px; margin:0 auto; padding:104px 28px 0;">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <h2 style="margin:0; font-size:clamp(30px,3.6vw,50px); line-height:1.05; letter-spacing:-0.03em; font-weight:600;">Tractaments</h2>
+      <p style="margin:0; font-size:14.5px; color:#6B7479; max-width:38ch;">Tot el que es fa a la clínica, sense derivar-te a tercers tret que calgui.</p>
+    </div>
+
+    <div style="margin-top:40px; border-top:1px solid #E6E2DC;">
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">01</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Conservadora</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Càries, empastaments i reconstruccions. Salvar la dent pròpia sempre que sigui possible.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">02</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Endodòncia</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Tractament de conductes quan el nervi està afectat, amb anestèsia ben posada i sense presses.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">03</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Periodòncia</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Genives que sagnen, retracció i manteniment. Inclou neteges amb GBT per a boques sensibles.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">04</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Odontopediatria</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Primeres visites, revisions i segellats. L'objectiu és que el nen surti volent tornar.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">05</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Ortodòncia</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Correcció de la mossegada en infants i adults, amb estudi previ i seguiment a la mateixa clínica.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">06</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Estètica</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Blanquejament i restauracions estètiques, sempre partint del que és sa i possible.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">07</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Cirurgia i implants</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Extraccions, implants i reconstruccions completes, planificades amb escàner 3D.</p>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; column-gap:28px; row-gap:8px; align-items:baseline; padding:24px 8px; border-bottom:1px solid #E6E2DC;" style-hover="background:#F3F7F8;">
+        <span style="font-size:12px; color:#0A9DC7; font-variant-numeric:tabular-nums;">08</span>
+        <h3 style="margin:0; flex:1 1 180px; min-width:0; font-size:clamp(19px,2vw,26px); font-weight:500; letter-spacing:-0.02em;">Pròtesi i ATM</h3>
+        <p style="margin:0; flex:2 1 300px; min-width:0; font-size:15.5px; line-height:1.55; color:#4A5459;">Pròtesis fixes i removibles, i tractament del bruxisme i dolor de l'articulació.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologia" style="margin-top:110px; background:#04252F; color:#EAF6F9; padding:88px 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 28px;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+        <h2 style="margin:0; font-size:clamp(30px,3.6vw,50px); line-height:1.05; letter-spacing:-0.03em; font-weight:600; color:#FFFFFF;">Veure-ho abans de decidir</h2>
+        <p style="margin:0; font-size:14.5px; color:#9FC4CF; max-width:40ch;">Tres coses que canvien com se sent una visita.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(270px,1fr)); gap:26px; margin-top:44px;">
+        <div style="min-width:0;">
+          <img src="images/scan-3d.png" alt="La doctora ensenya a un pacient el model 3D de la seva boca a la pantalla" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:14px;" />
+          <h3 style="margin:22px 0 0; font-size:21px; font-weight:500; letter-spacing:-0.02em; color:#FFFFFF;">Escàner intraoral 3D</h3>
+          <p style="margin:10px 0 0; font-size:15.5px; line-height:1.6; color:#B9D6DE;">Sense pasta ni motlles. En cinc minuts veus la teva boca a la pantalla i entens què t'estem explicant.</p>
+        </div>
+        <div style="min-width:0;">
+          <img src="images/catiana-gbt.jpg" alt="Màquina GBT per a neteges dentals a la clínica" style="width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center 30%; border-radius:14px;" />
+          <h3 style="margin:22px 0 0; font-size:21px; font-weight:500; letter-spacing:-0.02em; color:#FFFFFF;">Neteja GBT · Airflow</h3>
+          <p style="margin:10px 0 0; font-size:15.5px; line-height:1.6; color:#B9D6DE;">Pols fina i aigua tèbia en lloc de raspar. Pensada per a qui té molta sensibilitat i defuig les neteges.</p>
+        </div>
+        <div style="min-width:0;">
+          <img src="images/whitening.jpg" alt="Sessió de blanquejament amb làmpada LED" style="width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center 35%; border-radius:14px;" />
+          <h3 style="margin:22px 0 0; font-size:21px; font-weight:500; letter-spacing:-0.02em; color:#FFFFFF;">Blanquejament a clínica</h3>
+          <p style="margin:10px 0 0; font-size:15.5px; line-height:1.6; color:#B9D6DE;">Una sola sessió a la clínica, amb làmpada LED i control del to. Sense fèrules per fer a casa durant setmanes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1280px; margin:0 auto; padding:96px 28px 0;">
+    <h2 style="margin:0; font-size:clamp(30px,3.6vw,50px); line-height:1.05; letter-spacing:-0.03em; font-weight:600;">Què en diuen els pacients</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:26px; margin-top:40px;">
+      <figure style="margin:0; background:#FFFFFF; border:1px solid #E6E2DC; border-radius:16px; padding:28px;">
+        <p style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-size:21px; line-height:1.38; color:#12181C;">«Llevo más de 6 años siendo clienta y para mí la mejor dentista que he podido ir en mis 36 años! Atenta, perfeccionista y el mejor trato que me han dado!»</p>
+        <figcaption style="margin-top:18px; font-size:12.5px; color:#8A9296;">Google · 5★</figcaption>
+      </figure>
+      <figure style="margin:0; background:#FFFFFF; border:1px solid #E6E2DC; border-radius:16px; padding:28px;">
+        <p style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-size:21px; line-height:1.38; color:#12181C;">«Es una persona muy cercana y realmente preocupada por el bienestar del paciente… algo a lo que se le llama vocación.»</p>
+        <figcaption style="margin-top:18px; font-size:12.5px; color:#8A9296;">Google · 5★</figcaption>
+      </figure>
+      <figure style="margin:0; background:#FFFFFF; border:1px solid #E6E2DC; border-radius:16px; padding:28px;">
+        <p style="margin:0; font-family:'Instrument Serif', Georgia, serif; font-size:21px; line-height:1.38; color:#12181C;">«Hace muchos años que voy y el trato siempre es genial. Además, ahora a traído una equipo para hacer limpiezas que va genial para la gente con mucha sensibilidad.»</p>
+        <figcaption style="margin-top:18px; font-size:12.5px; color:#8A9296;">Google · 5★</figcaption>
+      </figure>
+    </div>
+    <p style="margin:20px 0 0; font-size:13.5px; color:#8A9296;">Mitjana de 4,8 sobre 68 ressenyes a Google.</p>
+  </section>
+
+  <section id="contacte" style="max-width:1280px; margin:0 auto; padding:104px 28px 0;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:48px; align-items:start;">
+      <div style="min-width:0;">
+        <h2 style="margin:0; font-size:clamp(30px,3.6vw,50px); line-height:1.05; letter-spacing:-0.03em; font-weight:600; max-width:16ch; text-wrap:balance;">Demana hora</h2>
+        <p style="margin:22px 0 0; max-width:44ch; font-size:17px; line-height:1.65; color:#414B50;">Ho agafem nosaltres mateixos al telèfon. Si prefereixes escriure, el WhatsApp és el mateix número i responem entre pacients.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:30px;">
+          <a href="tel:+34871025168" style="background:#0A9DC7; color:#04252F; font-size:15px; font-weight:600; padding:15px 26px; border-radius:999px;" style-hover="background:#12181C; color:#FBFAF8;">Truca · 871 02 51 68</a>
+          <a href="https://wa.me/34871025168" style="border:1.5px solid #12181C; color:#12181C; font-size:15px; font-weight:500; padding:13.5px 26px; border-radius:999px;" style-hover="background:#12181C; color:#FBFAF8;">WhatsApp</a>
+        </div>
+        <dl style="margin:38px 0 0; display:grid; gap:0; border-top:1px solid #E6E2DC;">
+          <div style="display:flex; gap:24px; padding:16px 0; border-bottom:1px solid #E6E2DC;">
+            <dt style="flex:0 0 120px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#8A9296;">Adreça</dt>
+            <dd style="margin:0; font-size:16px;">Av. Gran Via de Colom 15, Local 6<br />07300 Inca, Illes Balears</dd>
+          </div>
+          <div style="display:flex; gap:24px; padding:16px 0; border-bottom:1px solid #E6E2DC;">
+            <dt style="flex:0 0 120px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#8A9296;">Horari</dt>
+            <dd style="margin:0; font-size:16px;">Dilluns a dijous, 10:00–19:00<br />Divendres, dissabte i diumenge tancat</dd>
+          </div>
+          <div style="display:flex; gap:24px; padding:16px 0; border-bottom:1px solid #E6E2DC;">
+            <dt style="flex:0 0 120px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#8A9296;">Correu</dt>
+            <dd style="margin:0; font-size:16px; color:#8A9296; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">[pendent]</dd>
+          </div>
+        </dl>
+      </div>
+      <div style="min-width:0;">
+        <img src="images/storefront-day.jpg" alt="Façana de la Clínica Dental Catiana Bauçà a l'Avinguda Gran Via de Colom" style="width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px;" />
+        <p style="margin:14px 0 0; font-size:13.5px; color:#6B7479;">Sota els porxos, a peu pla. Hi ha zona blava al carrer i aparcament públic a dos minuts.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top:110px; border-top:1px solid #E6E2DC;">
+    <div style="max-width:1280px; margin:0 auto; padding:36px 28px; display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="images/logo-cb.png" alt="" style="width:30px; height:30px; object-fit:contain;" />
+        <span style="font-size:13.5px; color:#4A5459;">Clínica Dental Catiana Bauçà · Inca</span>
+      </div>
+      <div style="display:flex; gap:22px; flex-wrap:wrap;">
+        <a href="tel:+34871025168" style="font-size:13.5px; color:#4A5459;">871 02 51 68</a>
+        <a href="#inici" style="font-size:13.5px; color:#4A5459;">Avís legal</a>
+        <a href="#inici" style="font-size:13.5px; color:#4A5459;">Privacitat</a>
+      </div>
+    </div>
+  </footer>
+
+  <sc-if value="{{ showShootList }}" hint-placeholder-val="{{ true }}">
+    <section style="background:#12181C; color:#D6DBDE; padding:64px 0; margin-top:0;">
+      <div style="max-width:1280px; margin:0 auto; padding:0 28px;">
+        <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:#6FBBD0;">Nota de producció — no forma part del web</div>
+        <h2 style="margin:16px 0 0; font-size:clamp(24px,2.6vw,34px); font-weight:600; letter-spacing:-0.025em; color:#FFFFFF;">Què cal produir</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:34px; margin-top:34px; font-size:14.5px; line-height:1.65;">
+          <div>
+            <h3 style="margin:0 0 12px; font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:#8FA3AB;">Retoc amb Magnific (ara)</h3>
+            <ul style="margin:0; padding-left:18px; display:grid; gap:9px; color:#C3CBCF;">
+              <li>Fet: retall de la doctora amb fons transparent i escàner 3D millorat, tots dos ja implementats.</li>
+              <li>Millorar <code style="color:#6FBBD0;">places-10</code> (blanquejament) — encara és la foto més fluixa de la pàgina.</li>
+              <li>Millorar <code style="color:#6FBBD0;">places-05</code> (màquina GBT): està desenfocada i mal enquadrada.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="margin:0 0 12px; font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:#8FA3AB;">Sessió de fotos (mig dia)</h3>
+            <ul style="margin:0; padding-left:18px; display:grid; gap:9px; color:#C3CBCF;">
+              <li>Retrat de la doctora, dret, fons llis, mirant a càmera — substitueix el hero.</li>
+              <li>Gabinet buit i sala d'espera, llum natural — ara no n'hi ha cap.</li>
+              <li>Dues mans treballant: escàner 3D i neteja GBT, en detall.</li>
+              <li>Façana al capvespre amb el rètol encès.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="margin:0 0 12px; font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:#8FA3AB;">Pendent del client</h3>
+            <ul style="margin:0; padding-left:18px; display:grid; gap:9px; color:#C3CBCF;">
+              <li>Logotip en vectorial (SVG). Ara només tenim un PNG rasteritzat del monograma.</li>
+              <li>Biografia de la Dra. Bauçà (formació, anys d'exercici) i adreça de correu.</li>
+              <li>Consentiment per escrit dels pacients identificables (escàner 3D i blanquejament).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showShootList&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contingut&quot;},&quot;nameBand&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contingut&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showShootList: this.props.showShootList ?? true,
+      nameBand: this.props.nameBand ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
