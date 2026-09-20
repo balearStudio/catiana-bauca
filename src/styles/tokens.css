@@ -1,28 +1,63 @@
 /*
- * Design tokens. Values here are structurally neutral placeholders only —
- * this file has no house style. The `moodboard`/`design` skills overwrite
- * these variables per client, driven by DESIGN.md. Never hard-code a color,
- * font, spacing or motion value outside this file.
+ * Design tokens for Clínica Dental Catiana Bauçà.
+ * Every value here is read off the Claude Design handoff in `design/handoff/`
+ * and recorded in DESIGN.md. Two were changed for contrast and DESIGN.md says
+ * which and why. Never hard-code a colour, font, spacing or motion value
+ * outside this file.
  */
 :root {
-  /* Color: neutral grayscale only until DESIGN.md sets real values */
-  --color-bg: #ffffff;
-  --color-fg: #111111;
-  --color-muted: #666666;
-  --color-accent: #111111;
-  --color-border: #dddddd;
+  /* --- Colour -------------------------------------------------------- */
+  --color-bg: #fbfaf8; /* paper, not white */
+  --color-surface: #ffffff; /* review cards, lifted off the paper */
+  --color-fg: #12181c; /* ink */
+  --color-text: #414b50; /* body — 8.6:1 on paper */
+  --color-text-2: #5a6368; /* supporting, nav — 5.9:1 */
+  --color-text-3: #6a7378; /* labels, captions — 4.6:1 */
+  --color-border: #e6e2dc;
 
-  /* Type: system stack until DESIGN.md sets real typefaces */
-  --font-heading: system-ui, sans-serif;
-  --font-body: system-ui, sans-serif;
-  --font-scale-ratio: 1.25;
-  --font-size-base: 1rem;
-  --font-size-sm: calc(var(--font-size-base) / var(--font-scale-ratio));
-  --font-size-lg: calc(var(--font-size-base) * var(--font-scale-ratio));
-  --font-size-xl: calc(var(--font-size-lg) * var(--font-scale-ratio));
-  --font-size-2xl: calc(var(--font-size-xl) * var(--font-scale-ratio));
+  /* The clinic's own cyan, off the fascia and the staff scrubs. */
+  --color-accent: #0a9dc7; /* fills, rules, the star — never text on paper */
+  --color-accent-deep: #0a7285; /* cyan AS TEXT: links, row numbers — 5.4:1 */
+  --color-accent-grad: #0a7fa0; /* bottom of the hero panel gradient only */
 
-  /* Spacing scale */
+  /* The one dark section. */
+  --color-dark: #04252f;
+  --color-on-dark: #eaf6f9;
+  --color-on-dark-2: #b9d6de;
+  --color-on-dark-3: #9fc4cf;
+
+  /* Nit teal on cyan is 5.1:1. White on cyan is 2.4:1 and is banned. */
+  --color-on-accent: #04252f;
+  --color-selection: #bfe9f4;
+  --color-row-hover: #f3f7f8; /* treatments row tint, the only hover fill */
+
+  /* --- Type ---------------------------------------------------------- */
+  --font-heading: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Used only where a patient speaks. */
+  --font-quote: "Instrument Serif", Georgia, "Times New Roman", serif;
+
+  --font-size-base: 1.0625rem; /* 17px */
+  --font-size-sm: 0.96875rem; /* 15.5px */
+  --font-size-xs: 0.84375rem; /* 13.5px */
+  --font-size-label: 0.75rem; /* 12px, uppercase labels only */
+
+  /* The hero is measured in svh as well as vw so it fits one phone screen
+     including browser chrome. */
+  --font-size-display: clamp(34px, min(5.6vw, 9.4svh), 80px);
+  --font-size-h2: clamp(30px, 3.6vw, 50px);
+  --font-size-h3: clamp(19px, 2vw, 26px);
+
+  --tracking-display: -0.035em;
+  --tracking-h2: -0.03em;
+  --tracking-label: 0.14em;
+
+  /* --- Layout -------------------------------------------------------- */
+  --container: 1280px;
+  --gutter: 28px;
+  --header-h: 63px;
+  --section-gap: 96px;
+
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 1rem;
@@ -30,9 +65,20 @@
   --space-5: 2.5rem;
   --space-6: 4rem;
 
-  /* Motion: durations/easings, overridden per client's signature moment */
+  --radius-pill: 999px;
+  --radius-card: 14px;
+  --radius-panel: 20px;
+
+  /* --- Motion -------------------------------------------------------- */
   --motion-duration-fast: 0.2s;
-  --motion-duration-base: 0.5s;
-  --motion-duration-slow: 0.8s;
-  --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-duration-base: 0.4s;
+  --motion-duration-slow: 1.1s;
+  --motion-ease: cubic-bezier(0.215, 0.61, 0.355, 1); /* GSAP power3.out */
+}
+
+@media (max-width: 720px) {
+  :root {
+    --gutter: 20px;
+    --section-gap: 68px;
+  }
 }

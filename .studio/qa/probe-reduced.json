@@ -1,0 +1,74 @@
+{
+  "url": "http://localhost:4321/ca/",
+  "reducedMotion": true,
+  "results": {
+    "mobile": {
+      "overflow": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [],
+      "targets": [],
+      "invisible": [],
+      "fonts": {
+        "h1": {
+          "family": "Archivo",
+          "size": 34,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo",
+          "size": 30,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo",
+          "size": 19,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": []
+    },
+    "desktop": {
+      "overflow": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [],
+      "targets": [],
+      "invisible": [],
+      "fonts": {
+        "h1": {
+          "family": "Archivo",
+          "size": 80,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo",
+          "size": 50,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo",
+          "size": 26,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": []
+    }
+  }
+}

@@ -1,11 +1,17 @@
 # DESIGN: Clínica Dental Catiana Bauçà
 
-**Aesthetic:** calm-horizon-clinic
-**In one line:** the clinic already answers dental fear with a beach playing on the ceiling screen while it treats you — the site is built on that calm, a horizon you can rest on, in the clinic's own signage colours.
+**Aesthetic:** warm-clinical-editorial
+**In one line:** the dentist herself, cut out and standing on a block of the clinic's own cyan, against warm paper — the site answers fear by putting a person in front of you before it says anything about teeth.
 **Sector:** dental-clinic · **Languages:** ca (primary), es · **Chosen:** 2026-09-20, admin
 
+> **Reconciled 2026-09-20 from the Claude Design handoff** (`design/handoff/`). The moodboard
+> direction (`calm-horizon-clinic` — navy field, Cabinet Grotesk, a drawn horizon rule) was
+> provisional and is **superseded**. What follows is what was actually designed. The brief-side
+> sections — what the site must do, visitor, voice, do/don't — carried over unchanged, which is
+> the test that the two agree.
+
 ## What this site must do
-The clinic has **no website at all** — this is their first. It must: capture appointment requests (phone is the proven channel; a short form is secondary), state what is actually treated in words patients use, show that the place and the people are real, and answer the fear that the reviews say is the single reason people stay away. No booking vendor is integrated yet; the phone number is the primary action everywhere. `[CONFIRM: whether they want an email or a booking tool]`
+The clinic has **no website at all** — this is their first. It must: capture appointment requests (phone is the proven channel), state what is actually treated in words patients use, show that the place and the people are real, and answer the fear that the reviews say is the single reason people stay away. No booking vendor is integrated; the phone number is the primary action everywhere.
 
 ## Visitor
 - Who: a local adult in Inca or the surrounding villages, often someone who has avoided a dentist for years, or a parent booking for a child. Not a tourist.
@@ -13,140 +19,154 @@ The clinic has **no website at all** — this is their first. It must: capture a
 - Should do: call. Success short of that is reading the treatments index and recognising the building.
 
 ## Palette
-Sampled from the clinic's own fascia (`sources/images/places-01.jpg`), then enhanced for screen.
+The clinic's own cyan, read off the fascia, the window monogram and the staff scrubs, on warm paper rather than clinical white.
 
 | Name | Hex | Role |
 |---|---|---|
-| Nit | #16294A | dominant / background — the fascia black, deepened to a navy that can carry a page |
-| Verd | #9BD154 | accent, CTA only — sampled #84C048, brightened |
-| Blau | #6FC0DC | secondary: hairlines, the horizon rule, small marks — sampled #489CB4 |
-| Blanc | #FFFFFF | text on Nit |
-| Nit fosc | #0E1B33 | inset panels, form fields |
+| Paper | #FBFAF8 | page background |
+| Ink | #12181C | headings, primary text |
+| Cyan | #0A9DC7 | the brand mark: CTA fill, hero panel, rules, the star |
+| Cyan pregon | #0A7285 | cyan as **text** — links, row numbers (the design's #0A7FA0 failed AA at 4.42:1) |
+| Nit teal | #04252F | the one dark section, and text on Cyan |
+| Text | #414B50 | body |
+| Text secundari | #5A6368 | supporting lines, nav |
+| Text subtil | #6A7378 | labels, captions, footnotes (the design's #8A9296 failed AA at 3.04:1) |
+| Vora | #E6E2DC | hairlines, card borders |
+| Blanc | #FFFFFF | review cards, lifted off the paper |
 
-Contrast: Blanc on Nit **14.5:1**; Verd on Nit 8.0:1; Blau on Nit 7.1:1; CTA Nit on Verd **8.0:1**.
-**Never** white text on Verd (2.0:1) and never Blau as body text on Blanc.
+On Nit teal: #EAF6F9 headings (14.5:1), #B9D6DE body (10.5:1), #9FC4CF supporting (8.6:1).
+Contrast: Ink on Paper **17.2:1**; body 8.6:1; subtle labels 4.6:1; CTA Nit-on-Cyan **5.1:1**.
+**Never** white text on Cyan (2.4:1) — the CTA is dark teal on cyan, always.
 
 ## Typography
 | Role | Typeface | Source | Weights |
 |---|---|---|---|
-| Display | Cabinet Grotesk | Fontshare | 800 |
-| Text + section headings | Switzer | Fontshare | 400, 500, 600 |
+| Everything | Archivo | Google Fonts | 400, 500, 600, 700 |
+| Quotes only | Instrument Serif | Google Fonts | 400, 400 italic |
 
-**Evidence:** `identalinca.com` (Awwwards, same town) uses Neue Montreal, one family 100–700; `halodental.com` (SOTD) uses Nuckle, one family; `aventuradentalarts.com` (SOTD) uses Instrument Serif + Inter Tight. Two of three use a single clean grotesque and none pairs a serif with a sans. We stay in that category, with more character in the display so we do not read as a copy of the neighbour.
-
-Scale: base 17px, ratio 1.25 — sm .85 / base / lg 1.33 / xl 1.85 / 2xl 2.6 / display clamp(2.6rem, 6.5vw, 5.6rem). Line-height 1.55 body, 1.02 display; measure ≤ 68ch.
-Relationship: one family for everything except the display; contrast is **weight and size, not form** — the Swiss approach the references use.
-Treatment by level: display Cabinet Grotesk 800, sentence case, tracking −0.02em, used **four times on the whole page**. Section headings Switzer 600 at `lg`, sentence case, no tracking, deliberately quiet. Sub-headings Switzer 500 at `base`. Labels Switzer 500 `sm` in Blau. **No ALL-CAPS anywhere.**
-Where type is quiet: every section heading. The page's weight is carried by photographs and by the one large quote, not by headings.
-Set as a design element: the hero headline overlaps the bottom edge of the hero photograph; nothing else breaks its box.
+Scale is fluid, driven off the viewport in the hero (`clamp(34px, min(5.6vw, 9.4svh), 80px)`) so the hero always fits one screen without scrolling; section heads `clamp(30px, 3.6vw, 50px)`; body 17px; small print 11.5–15.5px.
+Relationship: **one grotesque does all the work**; the serif appears only where a patient speaks, so a quote is visually a different kind of thing from the clinic's own voice. That is the whole type idea, and it is the only place the two faces meet.
+Treatment by level: display and section heads at 600, tracking −0.03em, sentence case. Treatment names at 500. Labels 11.5–12px, uppercase, tracking 0.12–0.16em — **uppercase is confined to these labels** and appears nowhere else.
+Where type is quiet: the treatments index — 8 rows of one heading and one line, no ornament at all.
+Set as a design element: the name band, `CATIANA BAUÇÀ` sized to the exact page width (`calc((min(100vw,1280px) - 56px) / 8)`) so the type *is* the rule between two sections.
 
 ## Layout and spacing
-- Grid: 12-col, left-aligned, wide gutters. The page is horizontal and low — sections are wider than they are tall wherever the content allows.
-- Spacing: base unit 8px; generous vertical rhythm (96–128px between sections on desktop), tighter inside the treatments index.
-- Hero: full-width panoramic crop, short in height, headline overlapping its lower edge.
-- Radius / borders / shadows: 0 radius, no shadows. 1px Blau hairlines are the only rule.
-- The Verd/Blau stripe from the fascia reappears exactly twice: under the logo, and in the address block at the foot.
+- Container 1280px, 28px gutters. Every section is `auto-fit, minmax(…, 1fr)` — the page reflows to one column with no breakpoint logic.
+- The hero is `min-height: calc(100svh - 63px)` and sized in `svh`, so it fits a phone screen including the browser chrome.
+- Radius: 999px on buttons, 14–20px on panels and images. Shadow appears exactly once, under the rating card.
+- Vertical rhythm: 96–110px between sections on desktop.
 
 ## Section storyboard
 
-### 1. Hero — l'horitzó
-- Job: set the calm and name the town in five seconds; give the phone number immediately.
-- Content: headline, one supporting line, phone CTA, the 4.8/68 rating as one quiet line.
-- Media: `places-10` cropped panoramic (whitening under the blue lamp, beach on the ceiling screen).
-- Device: the photo is a wide, short band on the Nit field; the headline **overlaps its lower edge**; a 1px Blau rule runs the full page width at that overlap — the horizon.
-- Interaction / motion: the Blau rule draws left→right once on load (1.2s, ease-out). Reduced motion: already drawn. Nothing else animates anywhere on the page.
-- Not generic because: the hero image is the clinic's own answer to fear, not a stock smile.
+### 1. Hero — la doctora
+- Job: put a person in front of the visitor, name the town, and give the phone number, in one screen.
+- Content: eyebrow, *"Venir al dentista sense por."*, one supporting paragraph, phone CTA + secondary CTA, rating card.
+- Media: `catiana-hero.png` — a **Magnific cutout** of the dentist on a transparent background.
+- Device: she stands on a cyan gradient panel and **overflows its top edge** (`height:112%, bottom:0`); the 4,8★ card overlaps its left edge. Two planes and a person breaking out of one of them.
+- Motion (signature): the cyan panel wipes up from its base, she rises into it, the rating card settles last. ~1.1s, `power3.out`.
 
-### 2. La por, primer
-- Job: name the thing that keeps people away, in a patient's words, before selling anything.
-- Content: one verbatim Spanish review: "Sin duda mi clínica dental de confianza. Superados mis miedos gracias a todo el personal." + attribution.
-- Media: **none, deliberately** — the only section without an image.
-- Device: the quote set at `2xl` across a single wide measure on Nit, with a Verd hairline above it. No card, no quote marks as ornament.
-- Interaction: none.
-- Not generic because: a dental site's second section is normally a three-card service grid.
+### 2. Name band
+- Job: separate hero from body without a rule, and say the name once at full size.
+- Content: five category labels over a hairline, then the name at page width.
+- Device: the type is measured to the container, not chosen — see Typography.
+- Motion: a small horizontal drift on scroll (`ScrollTrigger` scrub), so the band reads as a plane moving at a different speed.
 
-### 3. Tractaments
+### 3. La clínica
+- Job: say what kind of place it is before saying what it does.
+- Content: two paragraphs on the arcade, the ground floor, the fact that visits start with an explanation.
+- Media: `arcade.jpg`, and the verbatim review that names the fear.
+- Device: the review sits in the right column in Instrument Serif behind a 2px cyan bar — a patient's voice, typographically separated from the clinic's.
+
+### 4. Tractaments
 - Job: say what is actually treated, in words a patient would use.
-- Content: the terms from the clinic's own window — conservadora, odontopediatria, periodòncia, ortodòncia, estètica, cirurgia i implants, pròtesi, ATM — each with one plain-language line.
-- Media: `places-03` (the etched window) alongside, as evidence these are their own words.
-- Device: a quiet index, like a book's table of contents: term left, plain line right, 1px Blau rule between rows. **Not cards** — specifically because `identalinca.com` down the street uses cards.
-- Interaction: rows are links; hover moves the Blau rule to full opacity. No lift, no shadow.
+- Content: 8 numbered rows, name + one plain line.
+- Media: none, deliberately.
+- Device: a numbered index with hairlines, **not cards** — the competitor in the same town uses cards.
+- Motion: rows fade in once, staggered 0.05s. Hover tints the row.
 
-### 4. T'ho ensenyam
-- Job: show the real differentiator — you see your own mouth before anything is done.
-- Content: three lines on the 3D scan and the treatment plan.
-- Media: `places-02` (hygienist showing a reclined patient the scan on screen), large.
-- Device: the photo runs to the page edge on one side; the three lines sit in the opposite column, vertically centred against it.
-- Interaction: none.
+### 5. Tecnologia — "Veure-ho abans de decidir"
+- Job: the real differentiator — you are shown your own mouth before anything is done.
+- Content: three items: 3D scanner, GBT cleaning, whitening.
+- Media: `scan-3d`, `catiana-gbt`, `whitening`.
+- Device: the page's **one dark section**, Nit teal, full bleed. The only inversion on the page, so it lands as a chapter break.
+- Motion: the three images scale 1.06 → 1 on scroll-scrub — depth, not a reveal.
 
-### 5. L'equip
-- Job: make the people real; the reviews credit "todo el personal", not only the dentist.
-- Content: names and one line each. `[CONFIRM: names, roles, who does what]`
-- Media: `places-04`, `places-05`, `places-08`.
-- Device: portraits **overlapped at different depths** on the Nit field, not a row of equal boxes — taken from the Gonin Hetzel reference. Phone-snapshot quality is accepted, not disguised: no heavy grading.
-- Interaction: none.
+### 6. Ressenyes
+- Job: let patients say the thing the clinic cannot say about itself.
+- Content: three verbatim Spanish reviews, in Spanish in **both** language versions.
+- Device: white cards lifted off the paper; Instrument Serif; the 4,8/68 average as one quiet line beneath.
 
-### 6. Com reconèixer-la
-- Job: get someone to the door. It is a ground-floor unit under an arcade and easy to walk past.
-- Content: address, one line on what to look for.
-- Media: `places-07` (the arcade) and `places-01` (the fascia), side by side.
-- Device: not "where we are" but **what you will see when you get there** — the two photos paired, and the address set in the same style as the fascia lettering, with the Verd/Blau stripe beneath it.
-- Interaction: none.
-
-### 7. Demana hora
+### 7. Contacte
 - Job: convert. Phone first.
-- Content: hours, phone, `[CONFIRM: email]`.
-- Device: the week as seven columns; open blocks fill Verd, closed ones stay empty — Mon–Thu fill, Fri–Sun do not. Readable at a glance instead of as a list. Phone large and clickable beneath.
-- Interaction: none. `[CONFIRM: split shift or continuous]`
+- Content: two paragraphs, phone CTA, directions CTA, address/hours table.
+- Media: `storefront-day.jpg` with a caption on finding the door.
 
 ## Media plan
-**8 of 10 catalogued assets used.**
+7 of the returned set used. Sources are the Google Business photos, two of them reworked with Magnific.
 
-| File | Section | Treatment | Caveat |
-|---|---|---|---|
-| places-10 | 1 Hero | Panoramic crop, keep the ceiling screen visible | Identifiable patient — consent required |
-| places-03 | 3 Tractaments | Straight, slight crop to the lettering | — |
-| places-02 | 4 T'ho ensenyam | Large, edge-bleed one side | Identifiable patient — consent required |
-| places-04 | 5 L'equip | Square crop, overlapped | The dentist; confirm she is happy with it |
-| places-05 | 5 L'equip | Square crop, overlapped | Staff member unnamed |
-| places-08 | 5 L'equip | Square crop, overlapped | Staff member unnamed |
-| places-07 | 6 Com reconèixer-la | Wide, shows the arcade | — |
-| places-01 | 6 Com reconèixer-la | Wide, the fascia | Source of the palette |
+| File | Section | Origin |
+|---|---|---|
+| catiana-hero.png | 1 Hero | **Magnific cutout** of `places-04`, transparent background |
+| arcade.jpg | 3 La clínica | `places-07` |
+| scan-3d.png | 5 Tecnologia | **Magnific enhance** of `places-02` |
+| catiana-gbt.jpg | 5 Tecnologia | `places-05` |
+| whitening.jpg | 5 Tecnologia | `places-10` |
+| storefront-day.jpg | 7 Contacte | `places-01` |
+| logo-cb.png | header, footer | the CB monogram |
 
-Not used: `places-06` (594px crop, too small; duplicates what 05 shows) and `places-09` (a patient's own review photo, not clinic-owned, consent unresolved).
-
-**Requested from client:** a half-day photo shoot (the single biggest upgrade available — everything here is a phone snapshot); the logo as vector artwork; team names and roles; written consent for the three photos with identifiable patients; an email address; confirmation of the opening hours.
+**Requested from the client** (the design's own production note, kept out of the site and copied to `.studio/requests.md`): a half-day photo shoot; the logo as vector; the doctor's bio and years in practice; an email address; written consent for the identifiable patients; confirmation of the opening hours.
 
 ## Imagery
-Real photographs only, no stock, no illustration. Phone-snapshot quality is accepted and never disguised with heavy grading or filters — a light, consistent exposure lift and nothing else. Wide crops, generous air. People appear in four of the eight images used.
+Real photographs only, no stock, no illustration. Phone-snapshot quality is accepted and not disguised. The one produced asset is the hero cutout, and it is produced *because* no portrait exists.
 
-## Signature motion
-- Moment: the Blau horizon rule drawing left→right across the hero on load.
-- Why it fits: the horizon is the whole idea — the calm the clinic already sells with a beach on the ceiling.
-- Durations/easing: fast 200ms, base 400ms, slow 1200ms; ease `power2.out`. One easing family.
-- Reduced-motion fallback: the rule is already drawn; nothing moves.
-- Everything else: restrained. Only user-triggered motion (menu, form feedback, the treatments-row hover). **No scroll reveals anywhere.**
+## Motion
+The moodboard direction banned scroll motion; this design does not, and the owner asked for movement. The rule that survives is **one signature moment, everything else subordinate**.
+- Signature: the hero panel wipe + the doctor rising into it, on load.
+- Supporting: name-band drift, treatment rows staggering in once, the dark section's images scrubbing 1.06 → 1, review cards staggering in, the header condensing past the hero.
+- Durations 200 / 400 / 1100ms; one easing family (`power3.out`, `none` for scrubs).
+- **Reduced motion: every element renders in its final state and nothing moves.** "From" states are set in JS, never CSS, so the prerendered HTML is visible without JavaScript.
 
 ## Voice
-Warm, plain, personal, first person plural (Mallorcan Catalan forms: *feim*, *ensenyam*). The clinic's own signage is Catalan; every retrievable review is in Spanish, so Catalan is primary and Spanish is written natively rather than translated. Patient quotes stay **verbatim in Spanish**, always, and are never re-voiced as brand copy.
+Warm, plain, personal, first person plural, Mallorcan Catalan forms (*feim*, *ensenyam*, *mirem*). Catalan is primary; Spanish is **written natively, not translated**. Patient quotes stay **verbatim in Spanish** in both versions and are never re-voiced.
 
 ## Do
 - Use her name; patients do.
-- Keep Verd for the primary action only.
+- Keep Cyan for the primary action and the brand mark only.
 - Say what a treatment is in normal words next to its clinical name.
 - Mark anything unconfirmed `[CONFIRM: …]` rather than dropping the section.
 
 ## Don't
-- White text on Verd; Blau as body text.
+- White text on Cyan; #8A9296 or #0A9DC7 as text.
 - Cards for the treatments (the competitor in the same town uses them).
 - Stock smiles, tooth icons, white/blue gradients, "el teu somriure" headlines.
 - Invent her years of practice, her qualifications, prices, or team names.
-- Add scroll-reveal animation to sections.
+- Uppercase anywhere except the 11.5–12px labels.
 
 ## Banned for this client
 - Global: the anti-generic and substance checklists (`guidelines/aesthetics.md`) and banned phrases (`guidelines/copy.md`).
-- Registry: typefaces Roboto, Space Grotesk, Brillante, Grift, Schibsted Grotesk, Archivo; dominants near #FBF6EF, #FFFFFF, #FCF7ED, #013333, #14170F, #B4472B. No override needed — the chosen palette and faces cleared.
-- Competitor: `identalinca.com` — Neue Montreal, black on white, card grid, inline line-illustrations. Do not approach any of these.
+- Competitor: `identalinca.com` — Neue Montreal, black on white, card grid, inline line-illustrations.
 
 ## Registry entry
-Cabinet Grotesk · Switzer · #16294A · #9BD154 · calm-horizon-clinic · panoramic-horizon-band-with-overlapping-headline · horizon-rule-draws-on-load · dental-clinic
+Archivo · Instrument Serif · #FBFAF8 · #0A9DC7 · warm-clinical-editorial · cutout-portrait-on-colour-block-with-overlapping-card · panel-wipe-and-portrait-rise · dental-clinic
+
+**Registry override, admin, 2026-09-20.** The check flagged four collisions against the returned
+design and the owner chose it anyway, with reasons:
+- `palette-near-identical` vs `panespatagonia` #FBF6EF, `finaivicenc` #FCF7ED, `balearstudio` #FFFFFF
+  — all three are *near-white page backgrounds*. The check compares raw RGB distance, so every warm
+  off-white collides with every other warm off-white regardless of what the page actually looks like.
+  This is a **defect in `registry.mjs`**, not a real repetition: the dominant *impression* here is the
+  cyan block and the dark teal section, not the paper. Fix logged in `BUILD.md`.
+- `typeface-reuse` vs `darrodtennis-test` Archivo — real, and accepted: `darrodtennis-test` is a
+  disposable test repo, not a delivered client site.
+
+## `[CONFIRM]` — carried into the build
+Checked line by line against `.studio/brief.md`. What the design asserted and the brief does not support:
+1. **WhatsApp CTA on `wa.me/34871025168`** — 871 is a Balearic landline; nothing in the research says the clinic has WhatsApp. Shipped instead as a **directions link to Google Maps**, which is verifiable. One content key (`hero.ctaSecondary`) switches it back if they confirm.
+2. **"Urgències — Truca i mirem d'encabir-te"** — an invented policy. The hero fact bar's third cell is the phone number instead.
+3. **"Endodòncia"** as treatment 02 — not on the clinic's window lettering, which the brief took as the service list. Kept (a clinic doing *conservadora* and implants does root canals) but flagged.
+4. **"zona blava al carrer i aparcament públic a dos minuts"** — unverified. Cut; the caption keeps only "sota els porxos, a peu pla".
+5. **"Sense fèrules per fer a casa durant setmanes"** — an unverified claim about what they *don't* offer. Cut.
+6. **Email `[pendent]`** — row removed rather than shipping a placeholder.
+7. **Hours "Dilluns a dijous, 10:00–19:00"** — Google says this, directories say a split shift. Shipped as Google's, still unconfirmed.
+8. **"porta anys atenent famílies d'Inca"** — kept. Reviews carry "llevo más de 6 años siendo clienta" and "hace muchos años que voy", so "anys" is evidenced; no specific number is claimed.
+9. **Legal notice and privacy policy** — the design's footer linked both to `#inici`. Spanish law requires them on a business site and neither exists. **Blocking before launch**, not before preview.

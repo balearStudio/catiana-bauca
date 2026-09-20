@@ -1,4 +1,5 @@
 @import "./tokens.css";
+@import "./sections.css";
 
 *,
 *::before,
@@ -6,10 +7,10 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
-  height: 100%;
+html {
+  scroll-behavior: smooth;
+  /* The header is sticky, so anchored sections must clear it. */
+  scroll-padding-top: var(--header-h);
 }
 
 body {
@@ -19,21 +20,117 @@ body {
   font-family: var(--font-body);
   font-size: var(--font-size-base);
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* The name band is wider than the viewport by design. */
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--font-heading);
-  line-height: 1.15;
+  font-weight: 600;
+  line-height: 1.05;
   margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--color-selection);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-deep);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* --- Shared primitives ------------------------------------------------ */
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-top: var(--section-gap);
+}
+
+.label {
+  font-size: var(--font-size-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-3);
+}
+
+.h2 {
+  font-size: var(--font-size-h2);
+  letter-spacing: var(--tracking-h2);
+  text-wrap: balance;
+}
+
+/* Buttons are pills; the primary one is dark teal on cyan, never white. */
+.btn {
+  display: inline-block;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  padding: 15px 26px;
+  white-space: nowrap;
+  transition:
+    background var(--motion-duration-fast) ease,
+    color var(--motion-duration-fast) ease;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.btn--primary:hover {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+.btn--ghost {
+  border: 1.5px solid var(--color-fg);
+  color: var(--color-fg);
+  font-weight: 500;
+  padding: 13.5px 26px;
+}
+
+.btn--ghost:hover {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+/* A patient's voice is always the serif. The clinic's own voice never is. */
+.quote {
+  font-family: var(--font-quote);
+  font-weight: 400;
+  color: var(--color-fg);
+  letter-spacing: -0.01em;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   *,
   *::before,
   *::after {

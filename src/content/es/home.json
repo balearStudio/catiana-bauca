@@ -1,12 +1,122 @@
 {
   "meta": {
-    "title": "Nombre del cliente — plantilla balearEWF",
-    "description": "Contenido de ejemplo. La fase de research/build sustituye este texto por la voz real del cliente."
+    "title": "Clínica Dental Catiana Bauçà · Dentista en Inca, Mallorca",
+    "description": "Clínica dental pequeña en el centro de Inca. Escáner 3D, limpiezas GBT para bocas sensibles y tiempo para explicártelo todo. 4,8 sobre 68 reseñas en Google. Llama al 871 02 51 68."
   },
   "hero": {
-    "eyebrow": "Plantilla",
-    "heading": "Este titular es un marcador de posición",
-    "subheading": "Sustituye este texto durante la fase de contenido. No representa el diseño ni el tono final del cliente.",
-    "cta": "Contactar"
+    "eyebrow": "Clínica dental en Inca, Mallorca",
+    "headingLine1": "Ir al dentista",
+    "headingLine2": "sin miedo.",
+    "lead": "La Dra. Catiana Bauçà lleva años atendiendo a familias de Inca en una clínica pequeña, a pie de calle. Tiempo para explicártelo todo, tecnología para enseñarte tu propia boca y mucha paciencia con quien llega asustado.",
+    "ctaSecondary": "Cómo llegar",
+    "portraitAlt": "La Dra. Catiana Bauçà",
+    "ratingCount": "68 reseñas en Google"
+  },
+  "facts": [
+    { "label": "Dirección", "value": "Av. Gran Via de Colom 15, Inca" },
+    { "label": "Horario", "value": "Lunes a jueves, 10–19 h" },
+    { "label": "Teléfono", "value": "871 02 51 68" }
+  ],
+  "nameBand": {
+    "labels": ["Odontóloga", "Implantes", "Estética", "Niños", "Inca"]
+  },
+  "clinic": {
+    "title": "Una clínica pequeña donde te conocen por tu nombre",
+    "p1": "Estamos en la planta baja de uno de los porches de la Avinguda Gran Via de Colom, en el centro de Inca. No es una franquicia ni un centro de paso: la mayoría de pacientes lleva años viniendo, a menudo toda la familia.",
+    "p2": "Cada visita empieza explicando qué pasa y por qué, con el escáner en la mano si hace falta. Nadie se queda con dudas ni firma nada sin entenderlo.",
+    "quote": "«Sin duda mi clínica dental de confianza. Superados mis miedos gracias a todo el personal, todo el proceso de reconstrucción de mi boca esta siendo increíble. Trato cercano y profesional.»",
+    "quoteSource": "Reseña en Google",
+    "photoAlt": "Los porches de la Avinguda Gran Via de Colom, con la entrada de la clínica"
+  },
+  "treatments": {
+    "title": "Tratamientos",
+    "intro": "Todo lo que se hace en la clínica, sin derivarte a terceros salvo que haga falta.",
+    "items": [
+      {
+        "name": "Conservadora",
+        "desc": "Caries, empastes y reconstrucciones. Salvar el diente propio siempre que sea posible."
+      },
+      {
+        "name": "Endodoncia",
+        "desc": "Tratamiento de conductos cuando el nervio está afectado, con la anestesia bien puesta y sin prisas."
+      },
+      {
+        "name": "Periodoncia",
+        "desc": "Encías que sangran, retracción y mantenimiento. Incluye limpiezas con GBT para bocas sensibles."
+      },
+      {
+        "name": "Odontopediatría",
+        "desc": "Primeras visitas, revisiones y sellados. El objetivo es que el niño salga queriendo volver."
+      },
+      {
+        "name": "Ortodoncia",
+        "desc": "Corrección de la mordida en niños y adultos, con estudio previo y seguimiento en la misma clínica."
+      },
+      {
+        "name": "Estética",
+        "desc": "Blanqueamiento y restauraciones estéticas, siempre partiendo de lo que está sano y es posible."
+      },
+      {
+        "name": "Cirugía e implantes",
+        "desc": "Extracciones, implantes y reconstrucciones completas, planificadas con escáner 3D."
+      },
+      {
+        "name": "Prótesis y ATM",
+        "desc": "Prótesis fijas y removibles, y tratamiento del bruxismo y del dolor de la articulación."
+      }
+    ]
+  },
+  "tech": {
+    "title": "Verlo antes de decidir",
+    "intro": "Tres cosas que cambian cómo se siente una visita.",
+    "items": [
+      {
+        "title": "Escáner intraoral 3D",
+        "desc": "Sin pasta ni moldes. En cinco minutos ves tu boca en la pantalla y entiendes lo que te estamos explicando.",
+        "alt": "La doctora enseña a un paciente el modelo 3D de su boca en la pantalla"
+      },
+      {
+        "title": "Limpieza GBT · Airflow",
+        "desc": "Polvo fino y agua templada en lugar de raspar. Pensada para quien tiene mucha sensibilidad y esquiva las limpiezas.",
+        "alt": "Máquina de limpieza dental GBT en la clínica"
+      },
+      {
+        "title": "Blanqueamiento en clínica",
+        "desc": "Una sola sesión en la clínica, con lámpara LED y control del tono.",
+        "alt": "Sesión de blanqueamiento dental con lámpara LED"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Qué dicen los pacientes",
+    "items": [
+      {
+        "quote": "«Llevo más de 6 años siendo clienta y para mí la mejor dentista que he podido ir en mis 36 años! Atenta, perfeccionista y el mejor trato que me han dado!»",
+        "source": "Google · 5★"
+      },
+      {
+        "quote": "«Es una persona muy cercana y realmente preocupada por el bienestar del paciente… algo a lo que se le llama vocación.»",
+        "source": "Google · 5★"
+      },
+      {
+        "quote": "«Hace muchos años que voy y el trato siempre es genial. Además, ahora a traído una equipo para hacer limpiezas que va genial para la gente con mucha sensibilidad.»",
+        "source": "Google · 5★"
+      }
+    ],
+    "average": "Media de 4,8 sobre 68 reseñas en Google."
+  },
+  "contact": {
+    "title": "Pide hora",
+    "lead": "Lo cogemos nosotras mismas al teléfono, no hay centralita. Si lo encuentras comunicando es que estamos con un paciente: vuelve a probar en un rato y te atendemos.",
+    "ctaPrimary": "Llama · 871 02 51 68",
+    "ctaSecondary": "Cómo llegar",
+    "addressLabel": "Dirección",
+    "addressValue": "Av. Gran Via de Colom 15, Local 6",
+    "addressValue2": "07300 Inca, Illes Balears",
+    "hoursLabel": "Horario",
+    "hoursValue": "Lunes a jueves, 10:00–19:00",
+    "hoursValue2": "Viernes, sábado y domingo cerrado",
+    "photoAlt": "Fachada de la Clínica Dental Catiana Bauçà en la Avinguda Gran Via de Colom",
+    "caption": "Bajo los porches, a pie llano."
   }
 }

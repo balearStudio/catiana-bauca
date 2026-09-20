@@ -1,0 +1,325 @@
+{
+  "url": "http://localhost:4321/ca/",
+  "reducedMotion": false,
+  "results": {
+    "mobile": {
+      "overflow": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [
+        {
+          "src": "/images/scan-3d.webp",
+          "node": "img",
+          "issues": [
+            "width/height attrs say 900x675 but the file is 752x1344 — reserves the wrong box",
+            "cover crop keeps only 42% of the source (752x1344 into 351x263)"
+          ]
+        },
+        {
+          "src": "/images/catiana-gbt.webp",
+          "node": "img",
+          "issues": [
+            "width/height attrs say 900x675 but the file is 900x2089 — reserves the wrong box",
+            "cover crop keeps only 32% of the source (900x2089 into 351x263)"
+          ]
+        },
+        {
+          "src": "/images/whitening.webp",
+          "node": "img",
+          "issues": [
+            "width/height attrs say 900x675 but the file is 900x1200 — reserves the wrong box"
+          ]
+        },
+        {
+          "src": "/images/storefront-day.webp",
+          "node": "img.contact__photo",
+          "issues": [
+            "width/height attrs say 1200x900 but the file is 1200x866 — reserves the wrong box",
+            "cover crop keeps only 28% of the source (1200x866 into 350x900)",
+            "served at 1200px for a 350px box"
+          ]
+        },
+        {
+          "src": "/images/logo-cb.webp",
+          "node": "img",
+          "issues": [
+            "served at 96px for a 30px box"
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "node": "a.header__brand",
+          "text": "Clínica Dental Catiana Bauçà",
+          "size": "34x34"
+        },
+        {
+          "node": "a",
+          "text": "ca",
+          "size": "19x15"
+        },
+        {
+          "node": "a",
+          "text": "es",
+          "size": "18x15"
+        },
+        {
+          "node": "a.header__cta",
+          "text": "871 02 51 68",
+          "size": "113x40"
+        },
+        {
+          "node": "a",
+          "text": "871 02 51 68",
+          "size": "87x16"
+        },
+        {
+          "node": "a",
+          "text": "871 02 51 68",
+          "size": "76x20"
+        }
+      ],
+      "invisible": [],
+      "fonts": {
+        "h1": {
+          "family": "Archivo",
+          "size": 34,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo",
+          "size": 30,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo",
+          "size": 19,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": [
+        {
+          "node": "div.treatments__row",
+          "text": "01ConservadoraCàries, empastaments i rec"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "02EndodònciaTractament de conductes quan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "03PeriodònciaGenives que sagnen, retracc"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "04OdontopediatriaPrimeres visites, revis"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "05OrtodònciaCorrecció de la mossegada en"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "06EstèticaBlanquejament i restauracions "
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "07Cirurgia i implantsExtraccions, implan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "08Pròtesi i ATMPròtesis fixes i removibl"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Llevo más de 6 años siendo clienta y pa"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Es una persona muy cercana y realmente "
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Hace muchos años que voy y el trato sie"
+        }
+      ]
+    },
+    "desktop": {
+      "overflow": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "culprits": []
+      },
+      "contrast": [],
+      "images": [
+        {
+          "src": "/images/scan-3d.webp",
+          "node": "img",
+          "issues": [
+            "width/height attrs say 900x675 but the file is 752x1344 — reserves the wrong box",
+            "cover crop keeps only 42% of the source (752x1344 into 391x294)"
+          ]
+        },
+        {
+          "src": "/images/catiana-gbt.webp",
+          "node": "img",
+          "issues": [
+            "width/height attrs say 900x675 but the file is 900x2089 — reserves the wrong box",
+            "cover crop keeps only 32% of the source (900x2089 into 391x294)"
+          ]
+        },
+        {
+          "src": "/images/whitening.webp",
+          "node": "img",
+          "issues": [
+            "width/height attrs say 900x675 but the file is 900x1200 — reserves the wrong box"
+          ]
+        },
+        {
+          "src": "/images/storefront-day.webp",
+          "node": "img.contact__photo",
+          "issues": [
+            "width/height attrs say 1200x900 but the file is 1200x866 — reserves the wrong box",
+            "cover crop keeps only 47% of the source (1200x866 into 588x900)"
+          ]
+        },
+        {
+          "src": "/images/logo-cb.webp",
+          "node": "img",
+          "issues": [
+            "served at 96px for a 30px box"
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "node": "a.header__brand",
+          "text": "Clínica Dental Catiana Bauçà",
+          "size": "226x34"
+        },
+        {
+          "node": "a",
+          "text": "La clínica",
+          "size": "56x20"
+        },
+        {
+          "node": "a",
+          "text": "Tractaments",
+          "size": "75x20"
+        },
+        {
+          "node": "a",
+          "text": "Tecnologia",
+          "size": "65x20"
+        },
+        {
+          "node": "a",
+          "text": "Contacte",
+          "size": "55x20"
+        },
+        {
+          "node": "a",
+          "text": "ca",
+          "size": "19x15"
+        },
+        {
+          "node": "a",
+          "text": "es",
+          "size": "18x15"
+        },
+        {
+          "node": "a.header__cta",
+          "text": "871 02 51 68",
+          "size": "113x40"
+        },
+        {
+          "node": "a",
+          "text": "871 02 51 68",
+          "size": "93x17"
+        },
+        {
+          "node": "a",
+          "text": "871 02 51 68",
+          "size": "76x20"
+        }
+      ],
+      "invisible": [],
+      "fonts": {
+        "h1": {
+          "family": "Archivo",
+          "size": 80,
+          "weight": "600"
+        },
+        "h2": {
+          "family": "Archivo",
+          "size": 50,
+          "weight": "600"
+        },
+        "h3": {
+          "family": "Archivo",
+          "size": 26,
+          "weight": "500"
+        },
+        "body": {
+          "family": "Archivo",
+          "size": 17,
+          "weight": "400"
+        }
+      },
+      "invisibleBeforeScroll": [
+        {
+          "node": "div.treatments__row",
+          "text": "01ConservadoraCàries, empastaments i rec"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "02EndodònciaTractament de conductes quan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "03PeriodònciaGenives que sagnen, retracc"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "04OdontopediatriaPrimeres visites, revis"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "05OrtodònciaCorrecció de la mossegada en"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "06EstèticaBlanquejament i restauracions "
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "07Cirurgia i implantsExtraccions, implan"
+        },
+        {
+          "node": "div.treatments__row",
+          "text": "08Pròtesi i ATMPròtesis fixes i removibl"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Llevo más de 6 años siendo clienta y pa"
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Es una persona muy cercana y realmente "
+        },
+        {
+          "node": "figure.reviews__card",
+          "text": "«Hace muchos años que voy y el trato sie"
+        }
+      ]
+    }
+  }
+}

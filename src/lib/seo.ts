@@ -1,8 +1,8 @@
 import { languages, defaultLanguage, type Language } from "../languages";
 
 const OG_LOCALE: Record<Language, string> = {
+  ca: "ca_ES",
   es: "es_ES",
-  en: "en_US",
 };
 
 export interface SeoInput {

@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Clínica Dental Catiana Bauçà · Dentista a Inca, Mallorca",
+    "description": "Clínica dental petita al centre d'Inca. Escàner 3D, neteges GBT per a boques sensibles i temps per explicar-t'ho tot. 4,8 sobre 68 ressenyes a Google. Truca al 871 02 51 68."
+  },
+  "hero": {
+    "eyebrow": "Clínica dental a Inca, Mallorca",
+    "headingLine1": "Venir al dentista",
+    "headingLine2": "sense por.",
+    "lead": "La Dra. Catiana Bauçà porta anys atenent famílies d'Inca a una clínica petita, a peu de carrer. Temps per explicar-t'ho tot, tecnologia per ensenyar-te la teva pròpia boca i molta paciència amb qui hi arriba espantat.",
+    "ctaSecondary": "Com arribar-hi",
+    "portraitAlt": "La Dra. Catiana Bauçà",
+    "ratingCount": "68 ressenyes a Google"
+  },
+  "facts": [
+    { "label": "Adreça", "value": "Av. Gran Via de Colom 15, Inca" },
+    { "label": "Horari", "value": "Dilluns a dijous, 10–19 h" },
+    { "label": "Telèfon", "value": "871 02 51 68" }
+  ],
+  "nameBand": {
+    "labels": ["Odontòloga", "Implants", "Estètica", "Infants", "Inca"]
+  },
+  "clinic": {
+    "title": "Una clínica petita on et coneixen pel nom",
+    "p1": "Som a la planta baixa d'un dels porxos de l'Avinguda Gran Via de Colom, al centre d'Inca. No és una franquícia ni un centre de pas: la majoria de pacients fa anys que hi vénen, sovint tota la família.",
+    "p2": "Cada visita comença explicant què passa i per què, amb l'escàner a la mà si cal. Ningú es queda amb dubtes ni signa res sense entendre-ho.",
+    "quote": "«Sin duda mi clínica dental de confianza. Superados mis miedos gracias a todo el personal, todo el proceso de reconstrucción de mi boca esta siendo increíble. Trato cercano y profesional.»",
+    "quoteSource": "Ressenya a Google",
+    "photoAlt": "Els porxos de l'Avinguda Gran Via de Colom, amb l'entrada de la clínica"
+  },
+  "treatments": {
+    "title": "Tractaments",
+    "intro": "Tot el que es fa a la clínica, sense derivar-te a tercers tret que calgui.",
+    "items": [
+      {
+        "name": "Conservadora",
+        "desc": "Càries, empastaments i reconstruccions. Salvar la dent pròpia sempre que sigui possible."
+      },
+      {
+        "name": "Endodòncia",
+        "desc": "Tractament de conductes quan el nervi està afectat, amb anestèsia ben posada i sense presses."
+      },
+      {
+        "name": "Periodòncia",
+        "desc": "Genives que sagnen, retracció i manteniment. Inclou neteges amb GBT per a boques sensibles."
+      },
+      {
+        "name": "Odontopediatria",
+        "desc": "Primeres visites, revisions i segellats. L'objectiu és que el nen surti volent tornar."
+      },
+      {
+        "name": "Ortodòncia",
+        "desc": "Correcció de la mossegada en infants i adults, amb estudi previ i seguiment a la mateixa clínica."
+      },
+      {
+        "name": "Estètica",
+        "desc": "Blanquejament i restauracions estètiques, sempre partint del que és sa i possible."
+      },
+      {
+        "name": "Cirurgia i implants",
+        "desc": "Extraccions, implants i reconstruccions completes, planificades amb escàner 3D."
+      },
+      {
+        "name": "Pròtesi i ATM",
+        "desc": "Pròtesis fixes i removibles, i tractament del bruxisme i dolor de l'articulació."
+      }
+    ]
+  },
+  "tech": {
+    "title": "Veure-ho abans de decidir",
+    "intro": "Tres coses que canvien com se sent una visita.",
+    "items": [
+      {
+        "title": "Escàner intraoral 3D",
+        "desc": "Sense pasta ni motlles. En cinc minuts veus la teva boca a la pantalla i entens què t'estem explicant.",
+        "alt": "La doctora ensenya a un pacient el model 3D de la seva boca a la pantalla"
+      },
+      {
+        "title": "Neteja GBT · Airflow",
+        "desc": "Pols fina i aigua tèbia en lloc de raspar. Pensada per a qui té molta sensibilitat i defuig les neteges.",
+        "alt": "Màquina de neteja dental GBT a la clínica"
+      },
+      {
+        "title": "Blanquejament a clínica",
+        "desc": "Una sola sessió a la clínica, amb làmpada LED i control del to.",
+        "alt": "Sessió de blanquejament dental amb làmpada LED"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Què en diuen els pacients",
+    "items": [
+      {
+        "quote": "«Llevo más de 6 años siendo clienta y para mí la mejor dentista que he podido ir en mis 36 años! Atenta, perfeccionista y el mejor trato que me han dado!»",
+        "source": "Google · 5★"
+      },
+      {
+        "quote": "«Es una persona muy cercana y realmente preocupada por el bienestar del paciente… algo a lo que se le llama vocación.»",
+        "source": "Google · 5★"
+      },
+      {
+        "quote": "«Hace muchos años que voy y el trato siempre es genial. Además, ahora a traído una equipo para hacer limpiezas que va genial para la gente con mucha sensibilidad.»",
+        "source": "Google · 5★"
+      }
+    ],
+    "average": "Mitjana de 4,8 sobre 68 ressenyes a Google."
+  },
+  "contact": {
+    "title": "Demana hora",
+    "lead": "Ho agafem nosaltres mateixos al telèfon, no hi ha centraleta. Si trobes comunicant és que som amb un pacient: torna-ho a provar d'aquí una estona i t'atendrem.",
+    "ctaPrimary": "Truca · 871 02 51 68",
+    "ctaSecondary": "Com arribar-hi",
+    "addressLabel": "Adreça",
+    "addressValue": "Av. Gran Via de Colom 15, Local 6",
+    "addressValue2": "07300 Inca, Illes Balears",
+    "hoursLabel": "Horari",
+    "hoursValue": "Dilluns a dijous, 10:00–19:00",
+    "hoursValue2": "Divendres, dissabte i diumenge tancat",
+    "photoAlt": "Façana de la Clínica Dental Catiana Bauçà a l'Avinguda Gran Via de Colom",
+    "caption": "Sota els porxos, a peu pla."
+  }
+}

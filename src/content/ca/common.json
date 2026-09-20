@@ -1,13 +1,13 @@
 {
   "brand": "Clínica Dental Catiana Bauçà",
   "brandShort": "Clínica Dental Catiana Bauçà · Inca",
-  "skipToContent": "Ir al contenido",
+  "skipToContent": "Ves al contingut",
   "nav": {
-    "label": "Secciones",
+    "label": "Seccions",
     "clinic": "La clínica",
-    "treatments": "Tratamientos",
-    "tech": "Tecnología",
-    "contact": "Contacto"
+    "treatments": "Tractaments",
+    "tech": "Tecnologia",
+    "contact": "Contacte"
   },
   "languageSwitch": { "label": "Idioma" },
   "phoneLabel": "871 02 51 68",

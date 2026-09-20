@@ -1,42 +1,36 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { gsap } from "gsap";
 import { Seo } from "../components/Seo";
+import { useHomeMotion } from "../lib/motion";
+import { Hero } from "../components/sections/Hero";
+import { NameBand } from "../components/sections/NameBand";
+import { Clinic } from "../components/sections/Clinic";
+import { Treatments } from "../components/sections/Treatments";
+import { Tech } from "../components/sections/Tech";
+import { Reviews } from "../components/sections/Reviews";
+import { Contact } from "../components/sections/Contact";
 
+/**
+ * One page, seven sections, in the order of the storyboard in DESIGN.md.
+ * The clinic has no website at all today, so everything a visitor needs has
+ * to be reachable by scrolling; the header's links are anchors, not routes.
+ */
 export function Home() {
   const { t } = useTranslation("home");
-  const heroRef = useRef<HTMLDivElement>(null);
+  const root = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-    if (prefersReducedMotion || !heroRef.current) return;
-
-    const ctx = gsap.context(() => {
-      gsap.from(".hero-heading, .hero-subheading, .hero-cta", {
-        opacity: 0,
-        y: 24,
-        duration: 0.8,
-        stagger: 0.12,
-        ease: "power2.out",
-      });
-    }, heroRef);
-
-    return () => ctx.revert();
-  }, []);
+  useHomeMotion(root);
 
   return (
-    <>
+    <div ref={root}>
       <Seo path="" title={t("meta.title")} description={t("meta.description")} />
-      <div ref={heroRef} className="hero">
-        <p className="hero-eyebrow">{t("hero.eyebrow")}</p>
-        <h1 className="hero-heading">{t("hero.heading")}</h1>
-        <p className="hero-subheading">{t("hero.subheading")}</p>
-        <a className="hero-cta" href="#contact">
-          {t("hero.cta")}
-        </a>
-      </div>
-    </>
+      <Hero />
+      <NameBand />
+      <Clinic />
+      <Treatments />
+      <Tech />
+      <Reviews />
+      <Contact />
+    </div>
   );
 }

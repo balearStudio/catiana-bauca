@@ -1,0 +1,694 @@
+/*
+ * Section styles, one block per section of the storyboard in DESIGN.md.
+ * Values come from tokens.css only. Motion "from" states are never set here —
+ * they live in src/lib/motion.ts so the prerendered HTML is visible without
+ * JavaScript (see guidelines/motion.md).
+ */
+
+/* --- Header ----------------------------------------------------------- */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding-block: 14px;
+  transition: padding-block var(--motion-duration-base) var(--motion-ease);
+}
+
+/* Toggled by ScrollTrigger once the hero is behind us. */
+.header--condensed .header__inner {
+  padding-block: 9px;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-fg);
+  /* The logo alone is 34px; the link has to stay tappable once the name is
+     hidden on a phone. Negative margin keeps the visual position unchanged. */
+  min-height: 44px;
+  padding-inline: 6px;
+  margin-inline: -6px;
+}
+
+.header__logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.header__name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.header__nav {
+  margin-left: auto;
+  display: flex;
+  gap: 26px;
+}
+
+.header__nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-2);
+  transition: color var(--motion-duration-fast) ease;
+}
+
+.header__nav a:hover {
+  color: var(--color-fg);
+}
+
+.header__lang {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-xs);
+}
+
+.header__lang a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  color: var(--color-text-3);
+  text-transform: uppercase;
+  transition: color var(--motion-duration-fast) ease;
+}
+
+.header__lang a:hover {
+  color: var(--color-fg);
+}
+
+.header__lang a[aria-current] {
+  color: var(--color-fg);
+  font-weight: 600;
+}
+
+.header__cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: background var(--motion-duration-fast) ease;
+}
+
+.header__cta:hover {
+  background: var(--color-accent-deep);
+}
+
+@media (max-width: 900px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__lang {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__name {
+    display: none;
+  }
+}
+
+/* --- 1. Hero ---------------------------------------------------------- */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(14px, 3svh, 32px);
+  min-height: calc(100svh - var(--header-h));
+  padding-top: clamp(12px, 2.4svh, 22px);
+  padding-bottom: clamp(14px, 2.6svh, 26px);
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: clamp(20px, 3.4svh, 40px) 40px;
+  align-items: center;
+}
+
+.hero__copy {
+  min-width: 0;
+}
+
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: clamp(12px, 2.6svh, 26px);
+}
+
+.hero__rule {
+  width: 26px;
+  height: 1px;
+  background: var(--color-accent);
+  transform-origin: left center;
+}
+
+.hero__heading {
+  font-size: var(--font-size-display);
+  line-height: 0.96;
+  letter-spacing: var(--tracking-display);
+  text-wrap: balance;
+}
+
+.hero__lead {
+  margin-top: clamp(12px, 2.4svh, 22px);
+  max-width: 46ch;
+  font-size: clamp(14.5px, min(1.2vw, 2.9svh), 18px);
+  line-height: 1.55;
+  color: var(--color-text);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: clamp(14px, 2.8svh, 28px);
+}
+
+.hero__actions .btn {
+  font-size: clamp(13.5px, 1.6svh, 15px);
+  padding: clamp(11px, 1.9svh, 15px) clamp(18px, 2vw, 24px);
+}
+
+.hero__actions .btn--ghost {
+  padding: clamp(9.5px, 1.75svh, 13.5px) clamp(18px, 2vw, 24px);
+}
+
+.hero__figure {
+  min-width: 0;
+  position: relative;
+  padding-top: clamp(14px, 5svh, 56px);
+}
+
+/* The stage sizes the composition; the panel, the portrait and the rating
+   card are siblings inside it so the panel can wipe up on its own without
+   scaling the person standing on it. */
+.hero__stage {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  max-height: 50svh;
+  width: min(100%, calc(50svh * 0.8));
+  margin-inline: auto;
+}
+
+/* The panel she stands on; she overflows its top edge. */
+.hero__panel {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-panel);
+  background: linear-gradient(
+    180deg,
+    var(--color-accent) 0%,
+    var(--color-accent-grad) 100%
+  );
+}
+
+.hero__portrait {
+  position: absolute;
+  bottom: 0;
+  left: 53%;
+  transform: translateX(-50%);
+  height: 112%;
+  width: auto;
+  max-width: none;
+}
+
+.hero__rating {
+  position: absolute;
+  left: -14px;
+  bottom: 18px;
+  z-index: 2;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 16px 20px;
+  box-shadow: 0 18px 40px -24px rgb(4 37 47 / 50%);
+}
+
+.hero__rating-score {
+  font-size: 1.625rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.hero__rating-score span {
+  color: var(--color-accent);
+}
+
+.hero__rating-count {
+  font-size: var(--font-size-label);
+  color: var(--color-text-3);
+  margin-top: 2px;
+}
+
+/* The three-fact bar under the hero. */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.facts__item {
+  background: var(--color-bg);
+  padding: clamp(10px, 1.7svh, 16px) 18px;
+}
+
+.facts__label {
+  font-size: 0.71875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+}
+
+.facts__value {
+  font-size: clamp(14.5px, 1.8svh, 17px);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* The phone number in the fact bar and in the footer are real tap targets on
+   a phone, so they get height even though they sit in small type. */
+.facts__value a,
+.footer__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-block: -12px;
+  transition: color var(--motion-duration-fast) ease;
+}
+
+.facts__value a:hover {
+  color: var(--color-accent-deep);
+}
+
+/* --- 2. Name band ----------------------------------------------------- */
+
+.nameband {
+  padding-top: 80px;
+}
+
+.nameband__labels {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 14px;
+}
+
+.nameband__labels span {
+  font-size: 0.71875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+}
+
+/* Sized to the container, not chosen: the type IS the rule between sections. */
+.nameband__name {
+  font-size: calc((min(100vw, var(--container)) - var(--gutter) * 2) / 8);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+  margin-top: 18px;
+  white-space: nowrap;
+}
+
+/* --- 3. La clínica ---------------------------------------------------- */
+
+.clinic__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 56px;
+  align-items: start;
+}
+
+.clinic__copy {
+  min-width: 0;
+}
+
+.clinic__copy p {
+  max-width: 52ch;
+  font-size: var(--font-size-base);
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.clinic__copy h2 {
+  max-width: 18ch;
+}
+
+.clinic__copy p:first-of-type {
+  margin-top: 26px;
+}
+
+.clinic__copy p + p {
+  margin-top: 18px;
+}
+
+.clinic__aside {
+  min-width: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.clinic__quote {
+  margin: 0;
+  border-left: 2px solid var(--color-accent);
+  padding: 4px 0 4px 22px;
+}
+
+.clinic__quote p {
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.3;
+}
+
+.clinic__quote footer {
+  margin-top: 14px;
+  font-size: 0.78125rem;
+  color: var(--color-text-3);
+  letter-spacing: 0.02em;
+}
+
+.clinic__photo {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  margin-top: 12px;
+}
+
+/* --- 4. Tractaments --------------------------------------------------- */
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-head p {
+  font-size: 0.90625rem;
+  color: var(--color-text-2);
+  max-width: 38ch;
+}
+
+.treatments__list {
+  margin-top: 40px;
+  border-top: 1px solid var(--color-border);
+}
+
+.treatments__row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 8px;
+  align-items: baseline;
+  padding: 24px 8px;
+  border-bottom: 1px solid var(--color-border);
+  transition: background var(--motion-duration-fast) ease;
+}
+
+.treatments__row:hover {
+  background: var(--color-row-hover);
+}
+
+.treatments__num {
+  font-size: var(--font-size-label);
+  color: var(--color-accent-deep);
+  font-variant-numeric: tabular-nums;
+}
+
+.treatments__name {
+  margin: 0;
+  flex: 1 1 180px;
+  min-width: 0;
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.treatments__desc {
+  flex: 2 1 300px;
+  min-width: 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.55;
+  color: var(--color-text-2);
+}
+
+/* --- 5. Tecnologia (the page's one dark section) ---------------------- */
+
+.tech {
+  margin-top: 110px;
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+  padding-block: 88px;
+}
+
+.tech h2 {
+  color: var(--color-on-dark);
+}
+
+.tech .section-head p {
+  color: var(--color-on-dark-3);
+  max-width: 40ch;
+}
+
+.tech__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 26px;
+  margin-top: 44px;
+}
+
+.tech__item {
+  min-width: 0;
+}
+
+/* The scrubbed scale lives on the image; the frame crops it. */
+.tech__frame {
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  aspect-ratio: 4 / 3;
+}
+
+.tech__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech__item h3 {
+  margin-top: 22px;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-on-dark);
+}
+
+.tech__item p {
+  margin-top: 10px;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  color: var(--color-on-dark-2);
+}
+
+/* --- 6. Ressenyes ----------------------------------------------------- */
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  margin-top: 40px;
+}
+
+.reviews__card {
+  margin: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.reviews__card p {
+  font-size: 1.3125rem;
+  line-height: 1.38;
+}
+
+.reviews__card figcaption {
+  margin-top: 18px;
+  font-size: 0.78125rem;
+  color: var(--color-text-3);
+}
+
+.reviews__average {
+  margin-top: 20px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-3);
+}
+
+/* --- 7. Contacte ------------------------------------------------------ */
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 48px;
+  align-items: start;
+}
+
+.contact__copy {
+  min-width: 0;
+}
+
+.contact__copy h2 {
+  max-width: 16ch;
+}
+
+.contact__copy > p {
+  margin-top: 22px;
+  max-width: 44ch;
+  font-size: var(--font-size-base);
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.contact__details {
+  margin: 38px 0 0;
+  display: grid;
+  border-top: 1px solid var(--color-border);
+}
+
+.contact__row {
+  display: flex;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact__row dt {
+  flex: 0 0 120px;
+  font-size: var(--font-size-label);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+}
+
+.contact__row dd {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contact__aside {
+  min-width: 0;
+}
+
+/* `height: auto` is load-bearing: the width/height attributes on the <img>
+   are a presentational hint that sets a used height, and a specified height
+   makes the browser ignore `aspect-ratio` entirely. Without this the photo
+   rendered at its attribute height and cover-cropped away most of the file. */
+.contact__photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.contact__caption {
+  margin-top: 14px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-2);
+}
+
+@media (max-width: 420px) {
+  .contact__row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contact__row dt {
+    flex: none;
+  }
+}
+
+/* --- Footer ----------------------------------------------------------- */
+
+.footer {
+  margin-top: 110px;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 36px;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-2);
+}
+
+.footer__brand img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer__links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-2);
+}
+
+.footer__links a:hover {
+  color: var(--color-fg);
+}
