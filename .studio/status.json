@@ -1,6 +1,6 @@
 {
   "slug": "catiana-bauca",
-  "stage": "design",
+  "stage": "qa",
   "stages": [
     "intake",
     "research",
@@ -80,8 +80,26 @@
       "stage": "design",
       "event": "set:design.startedAt",
       "note": null
+    },
+    {
+      "at": "2026-09-20T15:19:37.225Z",
+      "stage": "media",
+      "event": "stage-change",
+      "note": null
+    },
+    {
+      "at": "2026-09-20T15:19:37.313Z",
+      "stage": "build",
+      "event": "stage-change",
+      "note": null
+    },
+    {
+      "at": "2026-09-20T15:19:37.398Z",
+      "stage": "qa",
+      "event": "stage-change",
+      "note": null
     }
   ],
   "createdAt": "2026-09-20T10:03:08.997Z",
-  "updatedAt": "2026-09-20T10:48:55.456Z"
+  "updatedAt": "2026-09-20T15:19:37.401Z"
 }
